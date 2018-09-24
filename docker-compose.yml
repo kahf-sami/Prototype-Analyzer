@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  tf_jupyter:
+    build:
+      context: .
+      dockerfile: ./tf_jupyter/Dockerfile
+    container_name: tf_jupyter
+    image: tf_jupyter:0.1
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/notebooks/
+
