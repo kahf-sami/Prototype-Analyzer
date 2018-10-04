@@ -30,6 +30,7 @@ RUN pip3 --no-cache-dir install \
         sklearn \
         pandas \
         Pillow \
+        nltk\
         && \
     python3 -m ipykernel.kernelspec
 
