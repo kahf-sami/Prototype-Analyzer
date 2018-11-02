@@ -1,11 +1,11 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 # Pick up some TF dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         curl \
         libfreetype6-dev \
-        libpng12-dev \
+        libpng-dev \
         libzmq3-dev \
         pkg-config \
         python \
@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 --no-cache-dir install \
+        cython \
         ipykernel \
         jupyter \
         matplotlib \
@@ -34,7 +35,8 @@ RUN pip3 --no-cache-dir install \
         && \
     python3 -m ipykernel.kernelspec
 
-
+RUN apt-get update
+RUN apt-get install python3.6-dev
 
 # --- DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 # These lines will be edited automatically by parameterized_docker_build.sh. #
