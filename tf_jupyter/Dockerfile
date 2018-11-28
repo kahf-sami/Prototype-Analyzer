@@ -32,6 +32,7 @@ RUN pip3 --no-cache-dir install \
         pandas \
         Pillow \
         nltk\
+        imageio\
         && \
     python3 -m ipykernel.kernelspec
 
