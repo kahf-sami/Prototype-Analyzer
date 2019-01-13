@@ -1,0 +1,337 @@
+We find ourselves in a bewildering world. We want to make sense of what we see around us and to ask: What
+is the nature of the universe? What is our place in it and where did it and we come from? Why is it the way it is?
+To try to answer these questions we adopt some “world picture.” Just as an infinite tower of tortoises supporting
+the fiat earth is such a picture, so is the theory of superstrings. Both are theories of the universe, though the
+latter is much more mathematical and precise than the former. Both theories lack observational evidence: no
+one has ever seen a giant tortoise with the earth on its back, but then, no one has seen a superstring either.
+However, the tortoise theory fails to be a good scientific theory because it predicts that people should be able to
+fall off the edge of the world. This has not been found to agree with experience, unless that turns out to be the
+explanation for the people who are supposed to have disappeared in the Bermuda Triangle!
+The earliest theoretical attempts to describe and explain the universe involved the idea that events and natural
+phenomena were controlled by spirits with human emotions who acted in a very humanlike and unpredictable
+manner. These spirits inhabited natural objects, like rivers and mountains, including celestial bodies, like the
+sun and moon. They had to be placated and their favor sought in order to ensure the fertility of the soil and the
+rotation of the seasons. Gradually, however, it must have been noticed that there were certain regularities: the
+sun always rose in the east and set in the west, whether or not a sacrifice had been made to the sun god.
+Further, the sun, the moon, and the planets followed precise paths across the sky that could be predicted in
+advance with considerable accuracy. The sun and the moon might still be gods, but they were gods who
+obeyed strict laws, apparently without any exceptions, if one discounts stories like that of the sun stopping for
+Joshua.
+At first, these regularities and laws were obvious only in astronomy and a few other situations. However, as
+civilization developed, and particularly in the last 300 years, more and more regularities and laws were
+discovered. The success of these laws led Laplace at the beginning of the nineteenth century to postulate
+scientific determinism; that is, he suggested that there would be a set of laws that would determine the
+evolution of the universe precisely, given its configuration at one time.
+Laplace’s determinism was incomplete in two ways. It did not say how the laws should be chosen and it did not
+specify the initial configuration of the universe. These were left to God. God would choose how the universe
+began and what laws it obeyed, but he would not intervene in the universe once it had started. In effect, God
+was confined to the areas that nineteenth-century science did not understand.
+We now know that Laplace’s hopes of determinism cannot be realized, at least in the terms he had in mind.
+The uncertainty principle of quantum mechanics implies that certain pairs of quantities, such as the position and
+velocity of a particle, cannot both be predicted with complete accuracy. Quantum mechanics deals with this
+situation via a class of quantum theories in which particles don’t have well-defined positions and velocities but
+are represented by a wave. These quantum theories are deterministic in the sense that they give laws for the
+evolution of the wave with time. Thus if one knows the wave at one time, one can calculate it at any other time.
+The unpredictable, random element comes in only when we try to interpret the wave in terms of the positions
+and velocities of particles. But maybe that is our mistake: maybe there are no particle positions and velocities,
+but only waves. It is just that we try to fit the waves to our preconceived ideas of positions and velocities. The
+resulting mismatch is the cause of the apparent unpredictability.
+In effect, we have redefined the task of science to be the discovery of laws that will enable us to predict events
+up to the limits set by the uncertainty principle. The question remains, however: how or why were the laws and
+the initial state of the universe chosen?
+In this book I have given special prominence to the laws that govern gravity, because it is gravity that shapes
+the large-scale structure of the universe, even though it is the weakest of the four categories of forces. The
+laws of gravity were incompatible with the view held until quite recently that the universe is unchanging in time:
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/k.html (1 of 4) [2/20/2001 3:16:08 AM]
+the fact that gravity is always attractive implies that the universe must be either expanding or contracting.
+According to the general theory of relativity, there must have been a state of infinite density in the past, the big
+bang, which would have been an effective beginning of time. Similarly, if the whole universe recollapsed, there
+must be another state of infinite density in the future, the big crunch, which would be an end of time. Even if the
+whole universe did not recollapse, there would be singularities in any localized regions that collapsed to form
+black holes. These singularities would be an end of time for anyone who fell into the black hole. At the big bang
+and other singularities, all the laws would have broken down, so God would still have had complete freedom to
+choose what happened and how the universe began.
+When we combine quantum mechanics with general relativity, there seems to be a new possibility that did not
+arise before: that space and time together might form a finite, four-dimensional space without singularities or
+boundaries, like the surface of the earth but with more dimensions. It seems that this idea could explain many
+of the observed features of the universe, such as its large-scale uniformity and also the smaller-scale
+departures from homogeneity, like galaxies, stars, and even human beings. It could even account for the arrow
+of time that we observe. But if the universe is completely self-contained, with no singularities or boundaries,
+and completely described by a unified theory, that has profound implications for the role of God as Creator.
+Einstein once asked the question: “How much choice did God have in constructing the universe?” If the no
+boundary proposal is correct, he had no freedom at all to choose initial conditions. He would, of course, still
+have had the freedom to choose the laws that the universe obeyed. This, however, may not really have been all
+that much of a choice; there may well be only one, or a small number, of complete unified theories, such as the
+heterotic string theory, that are self-consistent and allow the existence of structures as complicated as human
+beings who can investigate the laws of the universe and ask about the nature of God.
+Even if there is only one possible unified theory, it is just a set of rules and equations. What is it that breathes
+fire into the equations and makes a universe for them to describe? The usual approach of science of
+constructing a mathematical model cannot answer the questions of why there should be a universe for the
+model to describe. Why does the universe go to all the bother of existing? Is the unified theory so compelling
+that it brings about its own existence? Or does it need a creator, and, if so, does he have any other effect on
+the universe? And who created him?
+Up to now, most scientists have been too occupied with the development of new theories that describe what
+the universe is to ask the question why. On the other hand, the people whose business it is to ask why, the
+philosophers, have not been able to keep up with the advance of scientific theories. In the eighteenth century,
+philosophers considered the whole of human knowledge, including science, to be their field and discussed
+questions such as: did the universe have a beginning? However, in the nineteenth and twentieth centuries,
+science became too technical and mathematical for the philosophers, or anyone else except a few specialists.
+Philosophers reduced the scope of their inquiries so much that Wittgenstein, the most famous philosopher of
+this century, said, “The sole remaining task for philosophy is the analysis of language.” What a comedown from
+the great tradition of philosophy from Aristotle to Kant!
+However, if we do discover a complete theory, it should in time be understandable in broad principle by
+everyone, not just a few scientists. Then we shall all, philosophers, scientists, and just ordinary people, be able
+to take part in the discussion of the question of why it is that we and the universe exist. If we find the answer to
+that, it would be the ultimate triumph of human reason – for then we would know the mind of God.
+ALBERT EINSTEIN
+Einstein’s connection with the politics of the nuclear bomb is well known: he signed the famous letter to
+President Franklin Roosevelt that persuaded the United States to take the idea seriously, and he engaged in
+postwar efforts to prevent nuclear war. But these were not just the isolated actions of a scientist dragged into
+the world of politics. Einstein’s life was, in fact, to use his own words, “divided between politics and equations.”
+Einstein’s earliest political activity came during the First World War, when he was a professor in Berlin.
+Sickened by what he saw as the waste of human lives, he became involved in antiwar demonstrations. His
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/k.html (2 of 4) [2/20/2001 3:16:08 AM]
+advocacy of civil disobedience and public encouragement of people to refuse conscription did little to endear
+him to his colleagues. Then, following the war, he directed his efforts toward reconciliation and improving
+international relations. This too did not make him popular, and soon his politics were making it difficult for him to
+visit the United States, even to give lectures.
+Einstein’s second great cause was Zionism. Although he was Jewish by descent, Einstein rejected the biblical
+idea of God. However, a growing awareness of anti-Semitism, both before and during the First World War, led
+him gradually to identify with the Jewish community, and later to become an outspoken supporter of Zionism.
+Once more unpopularity did not stop him from speaking his mind. His theories came under attack; an
+anti-Einstein organization was even set up. One man was convicted of inciting others to murder Einstein (and
+fined a mere six dollars). But Einstein was phlegmatic. When a book was published entitled 100 Authors
+Against Einstein, he retorted, “If I were wrong, then one would have been enough!”
+In 1933, Hitler came to power. Einstein was in America, and declared he would not return to Germany. Then,
+while Nazi militia raided his house and confiscated his bank account, a Berlin newspaper displayed the
+headline “Good News from Einstein – He’s Not Coming Back.” In the face of the Nazi threat, Einstein
+renounced pacifism, and eventually, fearing that German scientists would build a nuclear bomb, proposed that
+the United States should develop its own. But even before the first atomic bomb had been detonated, he was
+publicly warning of the dangers of nuclear war and proposing international control of nuclear weaponry.
+Throughout his life, Einstein’s efforts toward peace probably achieved little that would last – and certainly won
+him few friends. His vocal support of the Zionist cause, however, was duly recognized in 1952, when he was
+offered the presidency of Israel. He declined, saying he thought he was too naive in politics. But perhaps his
+real reason was different: to quote him again, “Equations are more important to me, because politics is for the
+present, but an equation is something for eternity.”
+GALILEO GALILEI
+Galileo, perhaps more than any other single person, was responsible for the birth of modern science. His
+renowned conflict with the Catholic Church was central to his philosophy, for Galileo was one of the first to
+argue that man could hope to understand how the world works, and, moreover, that we could do this by
+observing the real world.
+Galileo had believed Copernican theory (that the planets orbited the sun) since early on, but it was only when
+he found the evidence needed to support the idea that he started to publicly support it. He wrote about
+Copernicus’s theory in Italian (not the usual academic Latin), and soon his views became widely supported
+outside the universities. This annoyed the Aristotelian professors, who united against him seeking to persuade
+the Catholic Church to ban Copernicanism.
+Galileo, worried by this, traveled to Rome to speak to the ecclesiastical authorities. He argued that the Bible
+was not intended to tell us anything about scientific theories, and that it was usual to assume that, where the
+Bible conflicted with common sense, it was being allegorical. But the Church was afraid of a scandal that might
+undermine its fight against Protestantism, and so took repressive measures. It declared Copernicanism “false
+and erroneous” in 1616, and commanded Galileo never again to “defend or hold” the doctrine. Galileo
+acquiesced.
+In 1623, a longtime friend of Galileo’s became the Pope. Immediately Galileo tried to get the 1616 decree
+revoked. He failed, but he did manage to get permission to write a book discussing both Aristotelian and
+Copernican theories, on two conditions: he would not take sides and would come to the conclusion that man
+could in any case not determine how the world worked because God could bring about the same effects in
+ways unimagined by man, who could not place restrictions on God’s omnipotence.
+The book, Dialogue Concerning the Two Chief World Systems, was completed and published in 1632, with the
+full backing of the censors – and was immediately greeted throughout Europe as a literary and philosophical
+masterpiece. Soon the Pope, realizing that people were seeing the book as a convincing argument in favor of
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/k.html (3 of 4) [2/20/2001 3:16:08 AM]
+Copernicanism, regretted having allowed its publication. The Pope argued that although the book had the
+official blessing of the censors, Galileo had nevertheless contravened the 1616 decree. He brought Galileo
+before the Inquisition, who sentenced him to house arrest for life and commanded him to publicly renounce
+Copernicanism. For a second time, Galileo acquiesced.
+Galileo remained a faithful Catholic, but his belief in the independence of science had not been crushed. Four
+years before his death in 1642, while he was still under house arrest, the manuscript of his second major book
+was smuggled to a publisher in Holland. It was this work, referred to as Two New Sciences, even more than his
+support for Copernicus, that was to be the genesis of modern physics.
+Isaac Newton was not a pleasant man. His relations with other academics were notorious, with most of his later
+life spent embroiled in heated disputes. Following publication of Principia Mathematica – surely the most
+influential book ever written in physics – Newton had risen rapidly into public prominence. He was appointed
+president of the Royal Society and became the first scientist ever to be knighted.
+Newton soon clashed with the Astronomer Royal, John Flamsteed, who had earlier provided Newton with
+much-needed data for Principia, but was now withholding information that Newton wanted. Newton would not
+take no for an answer: he had himself appointed to the governing body of the Royal Observatory and then tried
+to force immediate publication of the data. Eventually he arranged for Flamsteed’s work to be seized and
+prepared for publication by Flamsteed’s mortal enemy, Edmond Halley. But Flamsteed took the case to court
+and, in the nick of time, won a court order preventing distribution of the stolen work. Newton was incensed and
+sought his revenge by systematically deleting all references to Flamsteed in later editions of Principia.
+A more serious dispute arose with the German philosopher Gottfried Leibniz. Both Leibniz and Newton had
+independently developed a branch of mathematics called calculus, which underlies most of modern physics.
+Although we now know that Newton discovered calculus years before Leibniz, he published his work much
+later. A major row ensued over who had been first, with scientists vigorously defending both contenders. It is
+remarkable, however, that most of the articles appearing in defense of Newton were originally written by his
+own hand – and only published in the name of friends! As the row grew, Leibniz made the mistake of appealing
+to the Royal Society to resolve the dispute. Newton, as president, appointed an “impartial” committee to
+investigate, coincidentally consisting entirely of Newton’s friends! But that was not all: Newton then wrote the
+committee’s report himself and had the Royal Society publish it, officially accusing Leibniz of plagiarism. Still
+unsatisfied, he then wrote an anonymous review of the report in the Royal Society’s own periodical. Following
+the death of Leibniz, Newton is reported to have declared that he had taken great satisfaction in “breaking
+Leibniz’s heart.”
+During the period of these two disputes, Newton had already left Cambridge and academe. He had been active
+in anti-Catholic politics at Cambridge, and later in Parliament, and was rewarded eventually with the lucrative
+post of Warden of the Royal Mint. Here he used his talents for deviousness and vitriol in a more socially
+acceptable way, successfully conducting a major campaign against counterfeiting, even sending several men to
+their death on the gallows.
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/k.html (4 of 4) [2/20/2001 3:16:08 AM]
+A Brief History of Time - Stephen Hawking... Glossary
+Absolute zero: The lowest possible temperature, at which substances contain no heat energy.
+Acceleration: The rate at which the speed of an object is changing.
+Anthropic principle: We see the universe the way it is because if it were different we would not be here to
+observe it.
+Antiparticle: Each type of matter particle has a corresponding antiparticle. When a particle collides with its
+antiparticle, they annihilate, leaving only energy.
+Atom: The basic unit of ordinary matter, made up of a tiny nucleus (consisting of protons and neutrons)
+surrounded by orbiting electrons.
+Big bang: The singularity at the beginning of the universe.
+Big crunch: The singularity at the end of the universe.
+Black hole: A region of space-time from which nothing, not even light, can escape, because gravity is so
+strong.
+Casimir effect: The attractive pressure between two flat, parallel metal plates placed very near to each other in
+a vacuum. The pressure is due to a reduction in the usual number of virtual particles in the space between the
+plates.
+Chandrasekhar limit: The maximum possible mass of a stable cold star, above which it must collapse into a
+black hole.
+Conservation of energy: The law of science that states that energy (or its equivalent in mass) can neither be
+created nor destroyed.
+Coordinates: Numbers that specify the position of a point in space and time.
+Cosmological constant: A mathematical device used by Einstein to give space-time an inbuilt tendency to
+expand.
+Cosmology: The study of the universe as a whole.
+Dark matter: Matter in galaxies, clusters, and possibly between clusters, that can not be observed directly but
+can be detected by its gravitational effect. As much as 90 percent of the mass of the universe may be in the
+form of dark matter.
+Duality: A correspondence between apparently different theories that lead to the same physical results.
+Einstein-Rosen bridge: A thin tube of space-time linking two black holes. Also see Wormhole.
+Electric charge: A property of a particle by which it may repel (or attract) other particles that have a charge of
+similar (or opposite) sign.
+Electromagnetic force: The force that arises between particles with electric charge; the second strongest of
+the four fundamental forces.
+Electron: A particle with negative electric charge that orbits the nucleus of an atom.
+Electroweak unification energy: The energy (around 100 GeV) above which the distinction between the
+electromagnetic force and the weak force disappears.
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/l.html (1 of 4) [2/20/2001 3:16:19 AM]
+A Brief History of Time - Stephen Hawking... Glossary
+Elementary particle: A particle that, it is believed, cannot be subdivided.
+Event: A point in space-time, specified by its time and place.
+Event horizon: The boundary of a black hole.
+Exclusion principle: The idea that two identical spin-1/2 particles cannot have (within the limits set by the
+uncertainty principle) both the same position and the same velocity.
+Field: Something that exists throughout space and time, as opposed to a particle that exists at only one point at
+a time.
+Frequency: For a wave, the number of complete cycles per second.
+Gamma rays: Electromagnetic rays of very short wavelength, produced in radio-active decay or by collisions of
+elementary particles.
+General relativity: Einstein’s theory based on the idea that the laws of science should be the same for all
+observers, no matter how they are moving. It explains the force of gravity in terms of the curvature of a
+four-dimensional space-time.
+Geodesic: The shortest (or longest) path between two points.
+Grand unification energy: The energy above which, it is believed, the electro-magnetic force, weak force, and
+strong force become indistinguishable from each other.
+Grand unified theory (GUT): A theory which unifies the electromagnetic, strong, and weak forces.
+Imaginary time: Time measured using imaginary numbers.
+Light cone: A surface in space-time that marks out the possible directions for light rays passing through a
+given event.
+Light-second (light-year): The distance traveled by light in one second (year).
+Magnetic field: The field responsible for magnetic forces, now incorporated along with the electric field, into the
+electromagnetic field.
+Mass: The quantity of matter in a body; its inertia, or resistance to acceleration.
+Microwave background radiation: The radiation from the glowing of the hot early universe, now so greatly
+red-shifted that it appears not as light but as microwaves (radio waves with a wavelength of a few centimeters).
+Also see COBE, on page 145.
+Naked singularity: A space-time singularity not surrounded by a black hole.
+Neutrino: An extremely light (possibly massless) particle that is affected only by the weak force and gravity.
+Neutron: An uncharged particle, very similar to the proton, which accounts for roughly half the particles in an
+atomic nucleus.
+Neutron star: A cold star, supported by the exclusion principle repulsion between neutrons.
+No boundary condition: The idea that the universe is finite but has no boundary (in imaginary time).
+Nuclear fusion: The process by which two nuclei collide and coalesce to form a single, heavier nucleus.
+Nucleus: The central part of an atom, consisting only of protons and neutrons, held together by the strong
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/l.html (2 of 4) [2/20/2001 3:16:19 AM]
+A Brief History of Time - Stephen Hawking... Glossary
+force.
+Particle accelerator: A machine that, using electromagnets, can accelerate moving charged particles, giving
+them more energy.
+Phase: For a wave, the position in its cycle at a specified time: a measure of whether it is at a crest, a trough,
+or somewhere in between.
+Photon: A quantum of light.
+Planck’s quantum principle: The idea that light (or any other classical waves) can be emitted or absorbed
+only in discrete quanta, whose energy is proportional to their wavelength.
+Positron: The (positively charged) antiparticle of the electron.
+Primordial black hole: A black hole created in the very early universe.
+Proportional: ‘X is proportional to Y’ means that when Y is multiplied by any number, so is X. ‘X is inversely
+proportional to Y’ means that when Y is multiplied by any number, X is divided by that number.
+Proton: A positively charged particle, very similar to the neutron, that accounts for roughly half the particles in
+the nucleus of most atoms.
+Pulsar: A rotating neutron star that emits regular pulses of radio waves.
+Quantum: The indivisible unit in which waves may be emitted or absorbed.
+Quantum chromodynamics (QCD): The theory that describes the interactions of quarks and gluons.
+Quantum mechanics: The theory developed from Planck’s quantum principle and Heisenberg’s uncertainty
+principle.
+Quark: A (charged) elementary particle that feels the strong force. Protons and neutrons are each composed of
+three quarks.
+Radar: A system using pulsed radio waves to detect the position of objects by measuring the time it takes a
+single pulse to reach the object and be reflected back.
+Radioactivity: The spontaneous breakdown of one type of atomic nucleus into another.
+Red shift: The reddening of light from a star that is moving away from us, due to the Doppler effect.
+Singularity: A point in space-time at which the space-time curvature becomes infinite.
+Singularity theorem: A theorem that shows that a singularity must exist under certain circumstances – in
+particular, that the universe must have started with a singularity.
+Space-time: The four-dimensional space whose points are events.
+Spatial dimension: Any of the three dimensions that are spacelike – that is, any except the time dimension.
+Special relativity: Einstein’s theory based on the idea that the laws of science should be the same for all
+observers, no matter how they are moving, in the absence of gravitational phenomena.
+Spectrum: The component frequencies that make up a wave. The visible part of the sun’s spectrum can be
+seen in a rainbow.
+Spin: An internal property of elementary particles, related to, but not identical to, the everyday concept of spin.
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/l.html (3 of 4) [2/20/2001 3:16:19 AM]
+A Brief History of Time - Stephen Hawking... Glossary
+Stationary state: One that is not changing with time: a sphere spinning at a constant rate is stationary because
+it looks identical at any given instant.
+String theory: A theory of physics in which particles are described as waves on strings. Strings have length but
+no other dimension.
+Strong force: The strongest of the four fundamental forces, with the shortest range of all. It holds the quarks
+together within protons and neutrons, and holds the protons and neutrons together to form atoms.
+Uncertainty principle: The principle, formulated by Heisenberg, that one can never be exactly sure of both the
+position and the velocity of a particle; the more accurately one knows the one, the less accurately one can
+know the other.
+Virtual particle: In quantum mechanics, a particle that can never be directly detected, but whose existence
+does have measurable effects.
+Wave/particle duality: The concept in quantum mechanics that there is no distinction between waves and
+particles; particles may sometimes behave like waves, and waves like particles.
+Wavelength: For a wave, the distance between two adjacent troughs or two adjacent crests.
+Weak force: The second weakest of the four fundamental forces, with a very short range. It affects all matter
+particles, but not force-carrying particles.
+Weight: The force exerted on a body by a gravitational field. It is proportional to, but not the same as, its mass.
+White dwarf: A stable cold star, supported by the exclusion principle repulsion between electrons.
+Wormhole: A thin tube of space-time connecting distant regions of the universe. Wormholes might also link to
+parallel or baby universes and could provide the possibility of time travel.
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/l.html (4 of 4) [2/20/2001 3:16:19 AM]
+A Brief History of Time - Stephen Hawking... Acknowledgments
+ACKNOWLEDGMENTS
+Many people have helped me in writing this book. My scientific colleagues have without exception been
+inspiring. Over the years my principal associates and collaborators were Roger Penrose, Robert Geroch,
+Brandon Carter, George Ellis, Gary Gibbons, Don Page, and Jim Hartle. I owe a lot to them, and to my
+research students, who have always given me help when needed.
+One of my students, Brian Whitt, gave me a lot of help writing the first edition of this book. My editor at Bantam
+Books, Peter Guzzardi, made innumerable comments which improved the book considerably. In addition, for
+this edition, I would like to thank Andrew Dunn, who helped me revise the text.
+I could not have written this book without my communication system. The software, called Equalizer, was
+donated by Walt Waltosz of Words Plus Inc., in Lancaster, California. My speech synthesizer was donated by
+Speech Plus, of Sunnyvale, California. The synthesizer and laptop computer were mounted on my wheelchair
+by David Mason, of Cambridge Adaptive Communication Ltd. With this system I can communicate better now
+than before I lost my voice.
+I have had a number of secretaries and assistants over the years in which I wrote and revised this book. On the
+secretarial side, I’m very grateful to Judy Fella, Ann Ralph, Laura Gentry, Cheryl Billington, and Sue Masey. My
+assistants have been Colin Williams, David Thomas, and Raymond Laflamme, Nick Phillips, Andrew Dunn,
+Stuart Jamieson, Jonathan Brenchley, Tim Hunt, Simon Gill, Jon Rogers, and Tom Kendall. They, my nurses,
+colleagues, friends, and family have enabled me to live a very full life and to pursue my research despite my
+disability.
+Stephen Hawking
+ABOUT THE AUTHOR
+Stephen Hawking, who was born in 1942 on the anniversary of Galileo’s death, holds Isaac Newton’s chair as
+Lucasian Professor of Mathematics at the University of Cambridge. Widely regarded as the most brilliant
+theoretical physicist since Einstein, he is also the author of Black Holes and Baby Universes, published in 1993,
+as well as numerous scientific papers and books.
+

@@ -1,0 +1,228 @@
+The last chapter discussed why we see time go forward: why disorder increases and why we remember the
+past but not the future. Time was treated as if it were a straight railway line on which one could only go one way
+or the other.
+But what if the railway line had loops and branches so that a train could keep going forward but come back to a
+station it had already passed? In other words, might it be possible for someone to travel into the future or the
+past?
+H. G. Wells in The Time Machine explored these possibilities as have countless other writers of science fiction.
+Yet many of the ideas of science fiction, like submarines and travel to the moon, have become matters of
+science fact. So what are the prospects for time travel?
+The first indication that the laws of physics might really allow people to travel in time came in 1949 when Kurt
+Godel discovered a new space-time allowed by general relativity. Godel was a mathematician who was famous
+for proving that it is impossible to prove all true statements, even if you limit yourself to trying to prove all the
+true statements in a subject as apparently cut and dried as arithmetic. Like the uncertainty principle, Godel’s
+incompleteness theorem may be a fundamental limitation on our ability to understand and predict the universe,
+but so far at least it hasn’t seemed to be an obstacle in our search for a complete unified theory.
+Godel got to know about general relativity when he and Einstein spent their later years at the Institute for
+Advanced Study in Princeton. His space-time had the curious property that the whole universe was rotating.
+One might ask: “Rotating with respect to what?” The answer is that distant matter would be rotating with
+respect to directions that little tops or gyroscopes point in.
+This had the side effect that it would be possible for someone to go off in a rocket ship and return to earth
+before he set out. This property really upset Einstein, who had thought that general relativity wouldn’t allow time
+travel. However, given Einstein’s record of ill-founded opposition to gravitational collapse and the uncertainty
+principle, maybe this was an encouraging sign. The solution Godel found doesn’t correspond to the universe
+we live in because we can show that the universe is not rotating. It also had a non-zero value of the
+cosmological constant that Einstein introduced when he thought the universe was unchanging. After Hubble
+discovered the expansion of the universe, there was no need for a cosmological constant and it is now
+generally believed to be zero. However, other more reasonable space-times that are allowed by general
+relativity and which permit travel into the past have since been found. One is in the interior of a rotating black
+hole. Another is a space-time that contains two cosmic strings moving past each other at high speed. As their
+name suggests, cosmic strings are objects that are like string in that they have length but a tiny cross section.
+Actually, they are more like rubber bands because they are under enormous tension, something like a million
+million million million tons. A cosmic string attached to the earth could accelerate it from 0 to 60 mph in 1/30th
+of a second. Cosmic strings may sound like pure science fiction but there are reasons to believe they could
+have formed in the early universe as a result of symmetry-breaking of the kind discussed in Chapter 5.
+Because they would be under enormous tension and could start in any configuration, they might accelerate to
+very high speeds when they straighten out.
+The Godel solution and the cosmic string space-time start out so distorted that travel into the past was always
+possible. God might have created such a warped universe but we have no reason to believe he did.
+Observations of the microwave background and of the abundances of the light elements indicate that the early
+universe did not have the kind of curvature required to allow time travel. The same conclusion follows on
+theoretical grounds if the no boundary proposal is correct. So the question is: if the universe starts out without
+the kind of curvature required for time travel, can we subsequently warp local regions of space-time sufficiently
+to allow it?
+A closely related problem that is also of concern to writers of science fiction is rapid interstellar or intergalactic
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/i.html (1 of 5) [2/20/2001 3:15:45 AM]
+travel. According to relativity, nothing can travel faster than light. If we therefore sent a spaceship to our nearest
+neighboring star, Alpha Centauri, which is about four light-years away, it would take at least eight years before
+we could expect the travelers to return and tell us what they had found. If the expedition were to the center of
+our galaxy, it would be at least a hundred thousand years before it came back. The theory of relativity does
+allow one consolation. This is the so-called twins paradox mentioned in Chapter 2.
+Because there is no unique standard of time, but rather observers each have their own time as measured by
+clocks that they carry with them, it is possible for the journey to seem to be much shorter for the space travelers
+than for those who remain on earth. But there would not be much joy in returning from a space voyage a few
+years older to find that everyone you had left behind was dead and gone thousands of years ago. So in order to
+have any human interest in their stories, science fiction writers had to suppose that we would one day discover
+how to travel faster than light. What most of thee authors don’t seem to have realized is that if you can travel
+faster than light, the theory of relativity implies you can also travel back in the, as the following limerick says:
+There was a young lady of Wight
+Who traveled much faster than light.
+She departed one day,
+In a relative way,
+And arrived on the previous night
+The point is that the theory of relativity says hat there is no unique measure of time that all observers will agree
+on Rather, each observer has his or her own measure of time. If it is possible for a rocket traveling below the
+speed of light to get from event A (say, the final of the 100-meter race of the Olympic Games in 202) to event B
+(say, the opening of the 100,004th meeting of the Congress of Alpha Centauri), then all observers will agree
+that event A happened before event B according to their times. Suppose, however, that the spaceship would
+have to travel faster than light to carry the news of the race to the Congress. Then observers moving at
+different speeds can disagree about whether event A occurred before B or vice versa. According to the time of
+an observer who is at rest with respect to the earth, it may be that the Congress opened after the race. Thus
+this observer would think that a spaceship could get from A to B in time if only it could ignore the speed-of-light
+speed limit. However, to an observer at Alpha Centauri moving away from the earth at nearly the speed of light,
+it would appear that event B, the opening of the Congress, would occur before event A, the 100-meter race.
+The theory of relativity says that the laws of physics appear the same to observers moving at different speeds.
+This has been well tested by experiment and is likely to remain a feature even if we find a more advanced
+theory to replace relativity Thus the moving observer would say that if faster-than-light travel is possible, it
+should be possible to get from event B, the opening of the Congress, to event A, the 100-meter race. If one
+went slightly faster, one could even get back before the race and place a bet on it in the sure knowledge that
+one would win.
+There is a problem with breaking the speed-of-light barrier. The theory of relativity says that the rocket power
+needed to accelerate a spaceship gets greater and greater the nearer it gets to the speed of light. We have
+experimental evidence for this, not with spaceships but with elementary particles in particle accelerators like
+those at Fermilab or CERN (European Centre for Nuclear Research). We can accelerate particles to 99.99
+percent of the speed of light, but however much power we feed in, we can’t get them beyond the speed-of-light
+barrier. Similarly with spaceships: no matter how much rocket power they have, they can’t accelerate beyond
+the speed of light.
+That might seem to rule out both rapid space travel and travel back in time. However, there is a possible way
+out. It might be that one could warp space-time so that there was a shortcut between A and B One way of doing
+this would be to create a wormhole between A and B. As its name suggests, a wormhole is a thin tube of
+space-time which can connect two nearly flat regions far apart.
+There need be no relation between the distance through the wormhole and the separation of its ends in the
+nearly Hat background. Thus one could imagine that one could create or find a wormhole that world lead from
+the vicinity of the Solar System to Alpha Centauri. The distance through the wormhole might be only a few
+million miles even though earth and Alpha Centauri are twenty million million miles apart in ordinary space. This
+would allow news of the 100-meter race to reach the opening of the Congress. But then an observer moving
+toward 6e earth should also be able to find another wormhole that would enable him to get from the opening of
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/i.html (2 of 5) [2/20/2001 3:15:45 AM]
+the Congress on Alpha Centauri back to earth before the start of the race. So wormholes, like any other
+possible form of travel faster than light, would allow one to travel into the past.
+The idea of wormholes between different regions of space-time was not an invention of science fiction writers
+but came from a very respectable source.
+In 1935, Einstein and Nathan Rosen wrote a paper in which they showed that general relativity allowed what
+they called “bridges,” but which are now known as wormholes. The Einstein-Rosen bridges didn’t last long
+enough for a spaceship to get through: the ship would run into a singularity as the wormhole pinched off.
+However, it has been suggested that it might be possible for an advanced civilization to keep a wormhole open.
+To do this, or to warp space-time in any other way so as to permit time travel, one can show that one needs a
+region of space-time with negative curvature, like the surface of a saddle. Ordi-nary matter, which has a
+positive energy density, gives space-time a positive curvature, like the surface of a sphere. So what one needs,
+in order to warp space-time in a way that will allow travel into the past, is matter with negative energy density.
+Energy is a bit like money: if you have a positive balance, you can distribute it in various ways, but according to
+the classical laws that were believed at the beginning of the century, you weren’t allowed to be overdrawn. So
+these classical laws would have ruled out any possibility of time travel. However, as has been described in
+earlier chapters, the classical laws were superseded by quantum laws based on the uncertainty principle. The
+quantum laws are more liberal and allow you to be overdrawn on one or two accounts provided the total
+balance is positive. In other words, quantum theory allows the energy density to be negative in some places,
+provided that this is made up for by positive energy densities in other places, so that the total energy re-mains
+positive. An example of how quantum theory can allow negative energy densities is provided by what is called
+the Casimir effect. As we saw in Chapter 7, even what we think of as “empty” space is filled with pairs of virtual
+particles and antiparticles that appear together, move apart, and come back together and annihilate each other.
+Now, suppose one has two parallel metal plates a short distance apart. The plates will act like mirrors for the
+virtual photons or particles of light. In fact they will form a cavity between them, a bit like an organ pipe that will
+resonate only at certain notes. This means that virtual photons can occur in the space between the plates only
+if their wavelengths (the distance between the crest of one wave and the next) fit a whole number of times into
+the gap between the plates. If the width of a cavity is a whole number of wavelengths plus a fraction of a
+wave-length, then after some reflections backward and forward between the plates, the crests of one wave will
+coincide with the troughs of another and the waves will cancel out.
+Because the virtual photons between the plates can have only the resonant wavelengths, there will be slightly
+fewer of them than in the region outside the plates where virtual photons can have any wavelength. Thus there
+will be slightly fewer virtual photons hitting the inside surfaces of the plates than the outside surfaces. One
+would therefore expect a force on the plates, pushing them toward each other. This force has actually been
+detected and has the predicted value. Thus we have experimental evidence that virtual particles exist and have
+real effects.
+The fact that there are fewer virtual photons between the plates means that their energy density will be less
+than elsewhere. But the total energy density in “empty” space far away from the plates must be zero, because
+otherwise the energy density would warp the space and it would not be almost flat. So, if the energy density
+between the plates is less than the energy density far away, it must be negative.
+We thus have experimental evidence both that space-time can be warped (from the bending of light during
+eclipses) and that it can be curved in the way necessary to allow time travel (from the Casimir effect). One
+might hope therefore that as we advance in science and technology, we would eventually manage to build a
+time machine. But if so, why hasn’t anyone come back from the future and told us how to do it? There might be
+good reasons why it would be unwise to give us the secret of time travel at our present primitive state of
+development, but unless human nature changes radically, it is difficult to believe that some visitor from the
+future wouldn’t spill the beans. Of course, some people would claim that sightings of UFOs are evidence that
+we are being visited either by aliens or by people from the future. (If the aliens were to get here in reasonable
+time, they would need faster-than-light travel, so the two possibilities may be equivalent.)
+However, I think that any visit by aliens or people from the future would be much more obvious and, probably,
+much more unpleasant. If they are going to reveal themselves at all, why do so only to those who are not
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/i.html (3 of 5) [2/20/2001 3:15:45 AM]
+regarded as reliable witnesses? If they are trying to warn us of some great danger, they are not being very
+effective.
+A possible way to explain the absence of visitors from the future would be to say that the past is fixed because
+we have observed it and seen that it does not have the kind of warping needed to allow travel back from the
+future. On the other hand, the future is unknown and open, so it might well have the curvature required. This
+would mean that any time travel would be confined to the future. There would be no chance of Captain Kirk and
+the Starship Enterprise turning up at the present time.
+This might explain why we have not yet been overrun by tourists from the future, but it would not avoid the
+problems that would arise if one were able to go back and change history. Suppose, for example, you went
+back and killed your great-great-grandfather while he was still a child. There are many versions of this paradox
+but they are essentially equivalent: one would get contradictions if one were free to change the past.
+There seem to be two possible resolutions to the paradoxes posed by time travel. One I shall call the consistent
+histories approach. It says that even if space-time is warped so that it would be possible to travel into the past,
+what happens in space-time must be a consistent solution of the laws of physics. According to this viewpoint,
+you could not go back in time unless history showed that you had already arrived in the past and, while there,
+had not killed your great-great-grandfather or committed any other acts that would conflict with your current
+situation in the present. Moreover, when you did go back, you wouldn’t be able to change recorded history.
+That means you wouldn’t have free will to do what you wanted. Of course, one could say that free will is an
+illusion anyway. If there really is a complete unified theory that governs everything, it presumably also
+determines your actions. But it does so in a way that is impossible to calculate for an organism that is as
+complicated as a human being. The reason we say that humans have free will is because we can’t predict what
+they will do. However, if the human then goes off in a rocket ship and comes back before he or she set off, we
+will be able to predict what he or she will do because it will be part of recorded history. Thus, in that situation,
+the time traveler would have no free will.
+The other possible way to resolve the paradoxes of time travel might be called the alternative histories
+hypothesis. The idea here is that when time travelers go back to the past, they enter alternative histories which
+differ from recorded history. Thus they can act freely, without the constraint of consistency with their previous
+history. Steven Spiel-berg had fun with this notion in the Back to the Future films: Marty McFly was able to go
+back and change his parents’ courtship to a more satisfactory history.
+The alternative histories hypothesis sounds rather like Richard Feynman’s way of expressing quantum theory
+as a sum over histories, which was described in Chapters 4 and 8. This said that the universe didn’t just have a
+single history: rather it had every possible history, each with its own probability. However, there seems to be an
+important difference between Feynman’s proposal and alternative histories. In Feynman’s sum, each history
+comprises a complete space-time and everything in it. The space-time may be so warped that it is possible to
+travel in a rocket into the past. But the rocket would remain in the same space-time and therefore the same
+history, which would have to be consistent. Thus Feynman’s sum over histories proposal seems to support the
+consistent histories hypothesis rather than the alternative histories.
+The Feynman sum over histories does allow travel into the past on a microscopic scale. In Chapter 9 we saw
+that the laws of science are unchanged by combinations of the operations C, P, and T. This means that an
+antiparticle spinning in the anticlockwise direction and moving from A to B can also be viewed as an ordinary
+particle spinning clockwise and moving backward in time from B to A. Similarly, an ordinary particle moving
+forward in time is equivalent to an antiparticle moving backward in time. As has been discussed in this chapter
+and Chapter 7, “empty” space is filled with pairs of virtual particles and antiparticles that appear together, move
+apart, and then come back together and annihilate each other.
+So, one can regard the pair of particles as a single particle moving on a closed loop in space-time. When the
+pair is moving forward in time (from the event at which it appears to that at which it annihilates), it is called a
+particle. But when the particle is traveling back in time (from the event at which the pair annihilates to that at
+which it appears), it is said to be an antiparticle traveling forward in time.
+The explanation of how black holes can emit particles and radiation (given in Chapter 7) was that one member
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/i.html (4 of 5) [2/20/2001 3:15:45 AM]
+of a virtual particle/ antiparticle pair (say, the antiparticle) might fall into the black hole, leaving the other
+member without a partner with which to annihilate. The forsaken particle might fall into the hole as well, but it
+might also escape from the vicinity of the black hole. If so, to an observer at a distance it would appear to be a
+particle emitted by the black hole.
+One can, however, have a different but equivalent intuitive picture of the mechanism for emission from black
+holes. One can regard the member of the virtual pair that fell into the black hole (say, the antiparticle) as a
+particle traveling backward in time out of the hole. When it gets to the point at which the virtual
+particle/antiparticle pair appeared together, it is scattered by the gravitational field into a particle traveling
+forward in time and escaping from the black hole. If, instead, it were the particle member of the virtual pair that
+fell into the hole, one could regard it as an antiparticle traveling back in time and coming out of the black hole.
+Thus the radiation by black holes shows that quantum theory allows travel back in time on a microscopic scale
+and that such time travel can produce observable effects.
+One can therefore ask: does quantum theory allow time travel on a macroscopic scale, which people could
+use? At first sight, it seems it should. The Feynman sum over histories proposal is supposed to be over all
+histories. Thus it should include histories in which space-time is so warped that it is possible to travel into the
+past. Why then aren’t we in trouble with history? Suppose, for example, someone had gone back and given the
+Nazis the secret of the atom bomb?
+One would avoid these problems if what I call the chronology protection conjecture holds. This says that the
+laws of physics conspire to prevent macroscopic bodies from carrying information into the past. Like the cosmic
+censorship conjecture, it has not been proved but there are reasons to believe it is true.
+The reason to believe that chronology protection operates is that when space-time is warped enough to make
+travel into the past possible, virtual particles moving on closed loops in space-time can become real particles
+traveling forward in time at or below the speed of light. As these particles can go round the loop any number of
+times, they pass each point on their route many times. Thus their energy is counted over and over again and
+the energy density will become very large. This could give space-time a positive curvature that would not allow
+travel into the past. It is not yet clear whether these particles would cause positive or negative curvature or
+whether the curvature produced by some kinds of virtual particles might cancel that produced by other kinds.
+Thus the possibility of time travel remains open. But I’m not going to bet on it. My opponent might have the
+unfair advantage of knowing the future.
+

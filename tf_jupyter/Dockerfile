@@ -33,6 +33,8 @@ RUN pip3 --no-cache-dir install \
         Pillow \
         nltk\
         imageio\
+        future\
+        keras\
         && \
     python3 -m ipykernel.kernelspec
 
