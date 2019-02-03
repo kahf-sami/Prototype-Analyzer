@@ -1,7 +1,7 @@
 import re, sys, numpy
 from nltk import word_tokenize, pos_tag
 from nltk.stem.porter import PorterStemmer
-import utility
+from .. import utility
 #import store
 from sklearn.cluster import KMeans
 

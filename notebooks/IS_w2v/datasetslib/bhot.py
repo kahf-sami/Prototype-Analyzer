@@ -2,8 +2,8 @@ import os
 import tarfile
 import numpy as np
 import sys
-import utility
-import k3s
+from . import utility
+from . import k3s
 import re
 from nltk.stem.porter import PorterStemmer
 import pandas
@@ -13,7 +13,7 @@ import pandas
 class BHOT():
     
     def __init__(self, datasets_root = None):
-        print('-- in BHOT --')
+        print('-- in Brexit --')
         if datasets_root:
             self.datasets_root = datasets_root
         else:
