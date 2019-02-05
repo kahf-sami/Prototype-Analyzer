@@ -38,6 +38,10 @@ class LC():
 		self.mostImportantColor = 'tomato'
 		self.defaultColor = 'yellowgreen'
 		self.ignoreLastIndex = False
+
+
+		self.sentences = []
+		self.word2Index = {}
 		return
 
 
@@ -49,8 +53,11 @@ class LC():
 	def setOccuranceContributingFactor(self, contributingFactor):
 		self.occuranceContributingFactor = contributingFactor
 		return
-
-
+    
+	def setProperNounContributingFactor(self, contributingFactor):
+		self.properNounContributingFactor = contributingFactor
+		return
+		
 	def getRawText(self):
 		return self.rawText
 
@@ -79,6 +86,10 @@ class LC():
 		return len(self.contributingWords)
 
 
+	def getSentences(self):
+		return self.sentences
+
+
 	def getMinAllowedScore(self):
 		if not self.max:
 			return 0
@@ -97,7 +108,7 @@ class LC():
 		minAllowedScore = self.getMinAllowedScore()
 
 		self.wordData = {}
-
+        
 		for word, score in self.contributingWords:
 			mostImportantWord = word
 			if self.scores[word] <= minAllowedScore:
@@ -391,3 +402,60 @@ class LC():
 			theta += thetaGap
 		
 		return nodes
+
+
+	def loadSentences(self, text):
+		stemmer = PorterStemmer()
+		processedWords = []
+		#allowedPOSTypes = ['NN', 'NNP', 'NNS', 'NNPS', 'JJ', 'JJR', 'JJS' 'RB', 'RBR', 'RBS', 'VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
+		allowedPOSTypes = ['NN', 'NNP', 'NNS', 'NNPS']
+		
+		words = self.getWords(text, True)
+		currentSentence = []
+		for word in words:
+			(word, type) = word
+			word = re.sub('[^a-zA-Z]+', '', word)
+			if type in ['.', '?', '!']:
+				if len(currentSentence) > 1:
+					# If more than one word than add as sentence
+					self.sentences.append(currentSentence)
+				currentSentence = []
+			if len(word) < 2:
+				continue
+			if type in allowedPOSTypes:
+				#print(type + ' ' + word)
+				word = word.lower()
+				word = stemmer.stem(word)
+				processedWords.append(word)
+				if word not in currentSentence:
+					currentSentence.append(word)
+				if word not in self.word2Index.keys():
+					self.word2Index[word] = len(self.word2Index)
+			
+		if len(currentSentence) > 1:
+			# If more than one word than add as sentence
+			self.sentences.append(currentSentence)
+
+
+		return self.word2Index
+
+	def getWordToIndex(self):
+		return self.word2Index
+
+	def textToVector(self, text):
+		self.loadSentences(text)
+
+		vocabSize = len(self.word2Index)
+		vectors = numpy.zeros((vocabSize, vocabSize))
+		
+		for sentence in self.sentences:
+			for word1 in sentence:
+				for word2 in sentence:
+					if word1 == word2:
+						continue
+					word1Index = self.word2Index[word1]
+					word2Index = self.word2Index[word2]
+					vectors[word1Index][word2Index] += 1
+
+
+		return vectors

@@ -33,8 +33,11 @@ class LDA(Vocab):
 
     def loadWordCoOccurenceVectorsFromFile(self):
         self.wordCoOccurenceVector = self.__loadSparseCsr()
-        self.__loadLdaTopics()
         return self.wordCoOccurenceVector
+
+    def loadTopics(self):
+        self.__loadLdaTopics()
+        return self.topics
 
 
     def buildWordCoOccurenceVectors(self, saveInFile = False):

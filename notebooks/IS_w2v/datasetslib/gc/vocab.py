@@ -69,6 +69,11 @@ class Vocab():
         self._load()
         return
 
+
+    def getId2Words(self):
+        return self.vocabId2Word
+        
+
     def buildVocab(self, saveInFile = False):
         if not self.dataSetPath:
             print('Failed to prepare vocab. Undefined dataset path.')
