@@ -6,14 +6,43 @@ from .. import utility
 from sklearn.cluster import KMeans
 from . import Base
 
-class K3S(Base):
+class Peripheral(Base):
 
 
 	def __init__(self, text, filterRate = 0.2):
-        super().__init__()
+		self.rawText = text
+		self.text = self.clean(text)
+		self.stopWords = utility.Utility.getStopWords()
+		self.stemmer = PorterStemmer()
+		self.scores = {}
+		self.count = {}
+		self.pureWords = {}
+		self.properNouns = []
+		self.wordData = {}
+		self.wordTypes = {}
+		self.wordPosition = {}
+		self.wordColors = {}
+		self.filterRate = filterRate
 		self.occuranceContributingFactor = 1
 		self.positionContributingFactor = 10
 		self.properNounContributingFactor = 100
+		self.currentPosition = None
+		self.contributingWords = None
+		self.max = None
+		self.min = None
+		self.totalWordsToProcess = 0
+		self.colors = ['crimson', 'fuchsia', 'pink', 'plum', 
+			'violet', 'darkorchid', 'royalblue', 
+			'dodgerblue', 'lightskyblue', 'aqua', 'aquamarine', 'green', 
+			'yellowgreen', 'yellow', 'lightyellow', 'lightsalmon', 
+			'coral', 'tomato', 'brown', 'maroon', 'gray']
+		self.mostImportantColor = 'tomato'
+		self.defaultColor = 'yellowgreen'
+		self.ignoreLastIndex = False
+
+
+		self.sentences = []
+		self.word2Index = {}
 		return
 
 
@@ -29,6 +58,13 @@ class K3S(Base):
 	def setProperNounContributingFactor(self, contributingFactor):
 		self.properNounContributingFactor = contributingFactor
 		return
+		
+	def getRawText(self):
+		return self.rawText
+
+
+	def getCleanText(self):
+		return self.text
 
 
 	def getScores(self):
