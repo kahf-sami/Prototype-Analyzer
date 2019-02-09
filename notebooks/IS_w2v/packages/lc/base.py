@@ -26,6 +26,7 @@ class Base():
 		self.filterRate = filterRate
 		self.topScorePercentage = filterRate
 		self.filteredWords = {}
+		self.contributors = []
 		return
 
 
@@ -54,6 +55,10 @@ class Base():
 
 	def getCleanText(self):
 		return self.text
+
+
+	def getContrinutors(self):
+		return self.contributors
 
 
 	def loadFilteredWords(self):
@@ -86,10 +91,10 @@ class Base():
 				currentSentence = []
 			if len(word) < self.minWordSize:
 				continue
-			if type in self.allowedPOSTypes:
-				wordKey = self.__addWordInfo(word)
-				if wordKey not in currentSentence:
-					currentSentence.append(word)
+			
+			wordKey = self._addWordInfo(word, type)
+			if wordKey and (wordKey not in currentSentence):
+				currentSentence.append(word)
 
         # Processing last sentence
 		if len(currentSentence) > 1:
@@ -136,6 +141,7 @@ class Base():
 			point['label'] = self.filteredWords[word]['pure_word']
 			if self.filteredWords[word]['count'] >= topWordScores:
 				point['color'] = 'red'
+				self.contributors.append(word)
 
 			points.append(point)
 
@@ -148,9 +154,10 @@ class Base():
 	def _getY(self, word):
 		return 0	
 
-	def __addWordInfo(self, word):
-		if not word:
-			return
+
+	def _addWordInfo(self, word, type):
+		if not word or (type not in self.allowedPOSTypes):
+			return None
 
 		localWordInfo = {}
 		localWordInfo['pure_word'] = word
@@ -161,7 +168,7 @@ class Base():
 			self.wordInfo[wordKey]['count'] += 1
 			if self.maxCount < self.wordInfo[wordKey]['count']:
 				self.maxCount = self.wordInfo[wordKey]['count']
-			return
+			return wordKey
 
 		localWordInfo['count'] = 1
 		localWordInfo['index'] = len(self.wordInfo)
