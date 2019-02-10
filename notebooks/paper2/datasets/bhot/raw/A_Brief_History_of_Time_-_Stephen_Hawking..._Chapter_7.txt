@@ -1,0 +1,236 @@
+Before 1970, my research on general relativity had concentrated mainly on the question of whether or not there had
+been a big bang singularity. However, one evening in November that year, shortly after the birth of my daughter, Lucy,
+I started to think about black holes as I was getting into bed. My disability makes this rather a slow process, so I had
+plenty of time. At that date there was no precise definition of which points in space-time lay inside a black hole and
+which lay outside. I had already discussed with Roger Penrose the idea of defining a black hole as the set of events
+from which it was not possible to escape to a large distance, which is now the generally accepted definition. It means
+that the boundary of the black hole, the event horizon, is formed by the light rays that just fail to escape from the black
+hole, hovering forever just on the edge Figure 7:1. It is a bit like running away from the police and just managing to
+keep one step ahead but not being able to get clear away!
+Suddenly I realized that the paths of these light rays could never approach one another. If they did they must
+eventually run into one another. It would be like meeting someone else running away from the police in the opposite
+direction – you would both be caught! (Or, in this case, fall into a black hole.) But if these light rays were swallowed up
+by the black hole, then they could not have been on the boundary of the black hole. So the paths of light rays in the
+event horizon had always to be moving parallel to, or away from, each other. Another way of seeing this is that the
+event horizon, the boundary of the black hole, is like the edge of a shadow – the shadow of impending doom. If you
+look at the shadow cast by a source at a great distance, such as the sun, you will see that the rays of light in the edge
+are not approaching each other.
+If the rays of light that form the event horizon, the boundary of the black hole, can never approach each other, the area
+of the event horizon might stay the same or increase with time, but it could never decrease because that would mean
+that at least some of the rays of light in the boundary would have to be approaching each other. In fact, the area would
+increase whenever matter or radiation fell into the black hole Figure 7:2.
+Figures 7:2 & 7:3
+Or if two black holes collided and merged together to form a single black hole, the area of the event horizon of the final
+black hole would be greater than or equal to the sum of the areas of the event horizons of the original black holes
+Figure 7:3. This nondecreasing property of the event horizon’s area placed an important restriction on the possible
+behavior of black holes. I was so excited with my discovery that I did not get much sleep that night. The next day I rang
+up Roger Penrose. He agreed with me. I think, in fact, that he had been aware of this property of the area. However,
+he had been using a slightly different definition of a black hole. He had not realized that the boundaries of the black
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/f.html (2 of 8) [2/20/2001 3:15:18 AM]
+hole according to the two definitions would be the same, and hence so would their areas, provided the black hole had
+settled down to a state in which it was not changing with time.
+The nondecreasing behavior of a black hole’s area was very reminiscent of the behavior of a physical quantity called
+entropy, which measures the degree of disorder of a system. It is a matter of common experience that disorder will
+tend to increase if things are left to themselves. (One has only to stop making repairs around the house to see that!)
+One can create order out of disorder (for example, one can paint the house), but that requires expenditure of effort or
+energy and so decreases the amount of ordered energy available.
+A precise statement of this idea is known as the second law of thermodynamics. It states that the entropy of an isolated
+system always increases, and that when two systems are joined together, the entropy of the combined system is
+greater than the sum of the entropies of the individual systems. For example, consider a system of gas molecules in a
+box. The molecules can be thought of as little billiard balls continually colliding with each other and bouncing off the
+walls of the box. The higher the temperature of the gas, the faster the molecules move, and so the more frequently and
+harder they collide with the walls of the box and the greater the outward pressure they exert on the walls. Suppose that
+initially the molecules are all confined to the left-hand side of the box by a partition. If the partition is then removed, the
+molecules will tend to spread out and occupy both halves of the box. At some later time they could, by chance, all be in
+the right half or back in the left half, but it is overwhelmingly more probable that there will be roughly equal numbers in
+the two halves. Such a state is less ordered, or more disordered, than the original state in which all the molecules were
+in one half. One therefore says that the entropy of the gas has gone up. Similarly, suppose one starts with two boxes,
+one containing oxygen molecules and the other containing nitrogen molecules. If one joins the boxes together and
+removes the intervening wall, the oxygen and the nitrogen molecules will start to mix. At a later time the most probable
+state would be a fairly uniform mixture of oxygen and nitrogen molecules throughout the two boxes. This state would
+be less ordered, and hence have more entropy, than the initial state of two separate boxes.
+The second law of thermodynamics has a rather different status than that of other laws of science, such as Newton's
+law of gravity, for example, because it does not hold always, just in the vast majority of cases. The probability of all the
+gas molecules in our first box
+found in one half of the box at a later time is many millions of millions to one, but it can happen. However, if one has a
+black hole around there seems to be a rather easier way of violating the second law: just throw some matter with a lot
+of entropy such as a box of gas, down the black hole. The total entropy of matter outside the black hole would go
+down. One could, of course, still say that the total entropy, including the entropy inside the black hole, has not gone
+down - but since there is no way to look inside the black hole, we cannot see how much entropy the matter inside it
+has. It would be nice, then, if there was some feature of the black hole by which observers outside the black hole could
+tell its entropy, and which would increase whenever matter carrying entropy fell into the black hole. Following the
+discovery, described above, that the area of the event horizon increased whenever matter fell into a black hole, a
+research student at Princeton named Jacob Bekenstein suggested that the area of the event horizon was a measure of
+the entropy of the black hole. As matter carrying entropy fell into a black hole, the area of its event horizon would go
+up, so that the sum of the entropy of matter outside black holes and the area of the horizons would never go down.
+This suggestion seemed to prevent the second law of thermodynamics from being violated in most situations.
+However, there was one fatal flaw. If a black hole has entropy, then it ought to also have a temperature. But a body
+with a particular temperature must emit radiation at a certain rate. It is a matter of common experience that if one heats
+up a poker in a fire it glows red hot and emits radiation, but bodies at lower temperatures emit radiation too; one just
+does not normally notice it because the amount is fairly small. This radiation is required in order to prevent violation of
+the second law. So black holes ought to emit radiation. But by their very definition, black holes are objects that are not
+supposed to emit anything. It therefore seemed that the area of the event horizon of a black hole could not be regarded
+as its entropy. In 1972 I wrote a paper with Brandon Carter and an American colleague, Jim Bardeen, in which we
+pointed out that although there were many similarities between entropy and the area of the event horizon, there was
+this apparently fatal difficulty. I must admit that in writing this paper I was motivated partly by irritation with Bekenstein,
+who, I felt, had misused my discovery of the increase of the area of the event horizon. However, it turned out in the end
+that he was basically correct, though in a manner he had certainly not expected.
+In September 1973, while I was visiting Moscow, I discussed black holes with two leading Soviet experts, Yakov
+Zeldovich and Alexander Starobinsky. They convinced me that, according to the quantum mechanical uncertainty
+principle, rotating black holes should create and emit particles. I believed their arguments on physical grounds, but I did
+not like the mathematical way in which they calculated the emission. I therefore set about devising a better
+mathematical treatment, which I described at an informal seminar in Oxford at the end of November 1973. At that time I
+had not done the calculations to find out how much would actually be emitted. I was expecting to discover just the
+radiation that Zeldovich and Starobinsky had predicted from rotating black holes. However, when I did the calculation, I
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/f.html (3 of 8) [2/20/2001 3:15:18 AM]
+found, to my surprise and annoyance, that even non-rotating black holes should apparently create and emit particles at
+a steady rate. At first I thought that this emission indicated that one of the approximations I had used was not valid. I
+was afraid that if Bekenstein found out about it, he would use it as a further argument to support his ideas about the
+entropy of black holes, which I still did not like. However, the more I thought about it, the more it seemed that the
+approximations really ought to hold. But what finally convinced me that the emission was real was that the spectrum of
+the emitted particles was exactly that which would be emitted by a hot body, and that the black hole was emitting
+particles at exactly the correct rate to prevent violations of the second law. Since then the calculations have been
+repeated in a number of different forms by other people. They all confirm that a black hole ought to emit particles and
+radiation as if it were a hot body with a temperature that depends only on the black hole’s mass: the higher the mass,
+the lower the temperature.
+How is it possible that a black hole appears to emit particles when we know that nothing can escape from within its
+event horizon? The answer, quantum theory tells us, is that the particles do not come from within the black hole, but
+from the “empty” space just outside the black hole’s event horizon! We can understand this in the following way: what
+we think of as “empty” space cannot be completely empty because that would mean that all the fields, such as the
+gravitational and electromagnetic fields, would have to be exactly zero. However, the value of a field and its rate of
+change with time are like the position and velocity of a particle: the uncertainty principle implies that the more
+accurately one knows one of these quantities, the less accurately one can know the other. So in empty space the field
+cannot be fixed at exactly zero, because then it would have both a precise value (zero) and a precise rate of change
+(also zero). There must be a certain minimum amount of uncertainty, or quantum fluctuations, in the value of the field.
+One can think of these fluctuations as pairs of particles of light or gravity that appear together at some time, move
+apart, and then come together again and annihilate each other. These particles are virtual particles like the particles
+that carry the gravitational force of the sun: unlike real particles, they cannot be observed directly with a particle
+detector. However, their indirect effects, such as small changes in the energy of electron orbits in atoms, can be
+measured and agree with the theoretical predictions to a remarkable degree of accuracy. The uncertainty principle also
+predicts that there will be similar virtual pairs of matter particles, such as electrons or quarks. In this case, however,
+one member of the pair will be a particle and the other an antiparticle (the antiparticles of light and gravity are the same
+as the particles).
+Because energy cannot be created out of nothing, one of the partners in a particle/antiparticle pair will have positive
+energy, and the other partner negative energy. The one with negative energy is condemned to be a short-lived virtual
+particle because real particles always have positive energy in normal situations. It must therefore seek out its partner
+and annihilate with it. However, a real particle close to a massive body has less energy than if it were far away,
+because it would take energy to lift it far away against the gravitational attraction of the body. Normally, the energy of
+the particle is still positive, but the gravitational field inside a black hole is so strong that even a real particle can have
+negative energy there. It is therefore possible, if a black hole is present, for the virtual particle with negative energy to
+fall into the black hole and become a real particle or antiparticle. In this case it no longer has to annihilate with its
+partner. Its forsaken partner may fall into the black hole as well. Or, having positive energy, it might also escape from
+the vicinity of the black hole as a real particle or antiparticle Figure 7:4.
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/f.html (4 of 8) [2/20/2001 3:15:18 AM]
+To an observer at a distance, it will appear to have been emitted from the black hole. The smaller the black hole, the
+shorter the distance the particle with negative energy will have to go before it becomes a real particle, and thus the
+greater the rate of emission, and the apparent temperature, of the black hole.
+The positive energy of the outgoing radiation would be balanced by a flow of negative energy particles into the black
+hole. By Einstein’s equation E = mc2 (where E is energy, m is mass, and c is the speed of light), energy is proportional
+to mass. A flow of negative energy into the black hole therefore reduces its mass. As the black hole loses mass, the
+area of its event horizon gets smaller, but this decrease in the entropy of the black hole is more than compensated for
+by the entropy of the emitted radiation, so the second law is never violated.
+Moreover, the lower the mass of the black hole, the higher its temperature. So as the black hole loses mass, its
+temperature and rate of emission increase, so it loses mass more quickly. What happens when the mass of the black
+hole eventually becomes extremely small is not quite clear, but the most reasonable guess is that it would disappear
+completely in a tremendous final burst of emission, equivalent to the explosion of millions of H-bombs.
+A black hole with a mass a few times that of the sun would have a temperature of only one ten millionth of a degree
+above absolute zero. This is much less than the temperature of the microwave radiation that fills the universe (about
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/f.html (5 of 8) [2/20/2001 3:15:18 AM]
+2.7º above absolute zero), so such black holes would emit even less than they absorb. If the universe is destined to go
+on expanding forever, the temperature of the microwave radiation will eventually decrease to less than that of such a
+black hole, which will then begin to lose mass. But, even then, its temperature would be so low that it would take about
+a million million million million million million million million million million million years (1 with sixty-six zeros after it) to
+evaporate completely. This is much longer than the age of the universe, which is only about ten or twenty thousand
+million years (1 or 2 with ten zeros after it). On the other hand, as mentioned in Chapter 6, there might be primordial
+black holes with a very much smaller mass that were made by the collapse of irregularities in the very early stages of
+the universe. Such black holes would have a much higher temperature and would be emitting radiation at a much
+greater rate. A primordial black hole with an initial mass of a thousand million tons would have a lifetime roughly equal
+to the age of the universe. Primordial black holes with initial masses less than this figure would already have
+completely evaporated, but those with slightly greater masses would still be emitting radiation in the form of X rays and
+gamma rays. These X rays and gamma rays are like waves of light, but with a much shorter wavelength. Such holes
+hardly deserve the epithet black: they really are white hot and are emitting energy at a rate of about ten thousand
+megawatts.
+One such black hole could run ten large power stations, if only we could harness its power. This would be rather
+difficult, however: the black hole would have the mass of a mountain compressed into less than a million millionth of an
+inch, the size of the nucleus of an atom! If you had one of these black holes on the surface of the earth, there would be
+no way to stop it from falling through the floor to the center of the earth. It would oscillate through the earth and back,
+until eventually it settled down at the center. So the only place to put such a black hole, in which one might use the
+energy that it emitted, would be in orbit around the earth – and the only way that one could get it to orbit the earth
+would be to attract it there by towing a large mass in front of it, rather like a carrot in front of a donkey. This does not
+sound like a very practical proposition, at least not in the immediate future.
+But even if we cannot harness the emission from these primordial black holes, what are our chances of observing
+them? We could look for the gamma rays that the primordial black holes emit during most of their lifetime. Although the
+radiation from most would be very weak because they are far away, the total from all of them might be detectable. We
+do observe such a background of gamma rays: Figure 7:5 shows how the observed intensity differs at different
+frequencies (the number of waves per second). However, this background could have been, and probably was,
+generated by processes other than primordial black holes. The dotted line in Figure 7:5 shows how the intensity should
+vary with frequency for gamma rays given off by primordial black holes, if there were on average 300 per cubic
+light-year. One can therefore say that the observations of the gamma ray background do not provide any positive
+evidence for primordial black holes, but they do tell us that on average there cannot be more than 300 in every cubic
+light-year in the universe. This limit means that primordial black holes could make up at most one millionth of the
+matter in the universe.
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/f.html (6 of 8) [2/20/2001 3:15:18 AM]
+With primordial black holes being so scarce, it might seem unlikely that there would be one near enough for us to
+observe as an individual source of gamma rays. But since gravity would draw primordial black holes toward any matter,
+they should be much more common in and around galaxies. So although the gamma ray background tells us that there
+can be no more than 300 primordial black holes per cubic light-year on average, it tells us nothing about how common
+they might be in our own galaxy. If they were, say, a million times more common than this, then the nearest black hole
+to us would probably be at a distance of about a thousand million kilometers, or about as far away as Pluto, the farthest
+known planet. At this distance it would still be very difficult to detect the steady emission of a black hole, even if it was
+ten thousand megawatts. In order to observe a primordial black hole one would have to detect several gamma ray
+quanta coming from the same direction within a reasonable space of time, such as a week. Otherwise, they might
+simply be part of the background. But Planck’s quantum principle tells us that each gamma ray quantum has a very
+high energy, because gamma rays have a very high frequency, so it would not take many quanta to radiate even ten
+thousand megawatts. And to observe these few coming from the distance of Pluto would require a larger gamma ray
+detector than any that have been constructed so far. Moreover, the detector would have to be in space, because
+gamma rays cannot penetrate the atmosphere.
+Of course, if a black hole as close as Pluto were to reach the end of its life and blow up, it would be easy to detect the
+final burst of emission. But if the black hole has been emitting for the last ten or twenty thousand million years, the
+chance of it reaching the end of its life within the next few years, rather than several million years in the past or future,
+is really rather small! So in order to have a reasonable chance of seeing an explosion before your research grant ran
+out, you would have to find a way to detect any explosions within a distance of about one light-year. In fact bursts of
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/f.html (7 of 8) [2/20/2001 3:15:18 AM]
+gamma rays from space have been detected by satellites originally constructed to look for violations of the Test Ban
+Treaty. These seem to occur about sixteen times a month and to be roughly uniformly distributed in direction across
+the sky. This indicates that they come from outside the Solar System since otherwise we would expect them to be
+concentrated toward the plane of the orbits of the planets. The uniform distribution also indicates that the sources are
+either fairly near to us in our galaxy or right outside it at cosmological distances because otherwise, again, they would
+be concentrated toward the plane of the galaxy. In the latter case, the energy required to account for the bursts would
+be far too high to have been produced by tiny black holes, but if the sources were close in galactic terms, it might be
+possible that they were exploding black holes. I would very much like this to be the case but I have to recognize that
+there are other possible explanations for the gamma ray bursts, such as colliding neutron stars. New observations in
+the next few years, particularly by gravitational wave detectors like LIGO, should enable us to discover the origin of the
+gamma ray bursts.
+Even if the search for primordial black holes proves negative, as it seems it may, it will still give us important
+information about the very early stages of the universe. If the early universe had been chaotic or irregular, or if the
+pressure of matter had been low, one would have expected it to produce many more primordial black holes than the
+limit already set by our observations of the gamma ray background. Only if the early universe was very smooth and
+uniform, with a high pressure, can one explain the absence of observable numbers of primordial black holes.
+The idea of radiation from black holes was the first example of a prediction that depended in an essential way on both
+the great theories of this century, general relativity and quantum mechanics. It aroused a lot of opposition initially
+because it upset the existing viewpoint: “How can a black hole emit anything?” When I first announced the results of
+my calculations at a conference at the Rutherford-Appleton Laboratory near Oxford, I was greeted with general
+incredulity. At the end of my talk the chairman of the session, John G. Taylor from Kings College, London, claimed it
+was all nonsense. He even wrote a paper to that effect. However, in the end most people, including John Taylor, have
+come to the conclusion that black holes must radiate like hot bodies if our other ideas about general relativity and
+quantum mechanics are correct. Thus, even though we have not yet managed to find a primordial black hole, there is
+fairly general agreement that if we did, it would have to be emitting a lot of gamma rays and X rays.
+The existence of radiation from black holes seems to imply that gravitational collapse is not as final and irreversible as
+we once thought. If an astronaut falls into a black hole, its mass will increase, but eventually the energy equivalent of
+that extra mass will be returned to the universe in the form of radiation. Thus, in a sense, the astronaut will be
+“recycled.” It would be a poor sort of immortality, however, because any personal concept of time for the astronaut
+would almost certainly come to an end as he was torn apart inside the black hole! Even the types of particles that were
+eventually emitted by the black hole would in general be different from those that made up the astronaut: the only
+feature of the astronaut that would survive would be his mass or energy.
+The approximations I used to derive the emission from black holes should work well when the black hole has a mass
+greater than a fraction of a gram. However, they will break down at the end of the black hole’s life when its mass gets
+very small. The most likely outcome seems to be that the black hole will just disappear, at least from our region of the
+universe, taking with it the astronaut and any singularity there might be inside it, if indeed there is one. This was the
+first indication that quantum mechanics might remove the singularities that were predicted by general relativity.
+However, the methods that I and other people were using in 1974 were not able to answer questions such as whether
+singularities would occur in quantum gravity. From 1975 onward I therefore started to develop a more powerful
+approach to quantum gravity based on Richard Feynrnan’s idea of a sum over histories. The answers that this
+approach suggests for the origin and fate of the universe and its contents, such as astronauts, will be de-scribed in the
+next two chapters. We shall see that although the uncertainty principle places limitations on the accuracy of all our
+predictions, it may at the same time remove the fundamental unpredictability that occurs at a space-time singularity.
+

@@ -1,0 +1,150 @@
+The success of scientific theories, particularly Newton’s theory of gravity, led the French scientist the Marquis de Laplace
+at the beginning of the nineteenth century to argue that the universe was completely deterministic. Laplace suggested
+that there should be a set of scientific laws that would allow us to predict everything that would happen in the universe, if
+only we knew the complete state of the universe at one time. For example, if we knew the positions and speeds of the
+sun and the planets at one time, then we could use Newton’s laws to calculate the state of the Solar System at any other
+time. Determinism seems fairly obvious in this case, but Laplace went further to assume that there were similar laws
+governing everything else, including human behavior.
+The doctrine of scientific determinism was strongly resisted by many people, who felt that it infringed God’s freedom to
+intervene in the world, but it remained the standard assumption of science until the early years of this century. One of the
+first indications that this belief would have to be abandoned came when calculations by the British scientists Lord
+Rayleigh and Sir James Jeans suggested that a hot object, or body, such as a star, must radiate energy at an infinite
+rate. According to the laws we believed at the time, a hot body ought to give off electromagnetic waves (such as radio
+waves, visible light, or X rays) equally at all frequencies. For example, a hot body should radiate the same amount of
+energy in waves with frequencies between one and two million million waves a second as in waves with frequencies
+between two and three million million waves a second. Now since the number of waves a second is unlimited, this would
+mean that the total energy radiated would be infinite.
+In order to avoid this obviously ridiculous result, the German scientist Max Planck suggested in 1900 that light, X rays,
+and other waves could not be emitted at an arbitrary rate, but only in certain packets that he called quanta. Moreover,
+each quantum had a certain amount of energy that was greater the higher the frequency of the waves, so at a high
+enough frequency the emission of a single quantum would require more energy than was available. Thus the radiation at
+high frequencies would be reduced, and so the rate at which the body lost energy would be finite.
+The quantum hypothesis explained the observed rate of emission of radiation from hot bodies very well, but its
+implications for determinism were not realized until 1926, when another German scientist, Werner Heisenberg,
+formulated his famous uncertainty principle. In order to predict the future position and velocity of a particle, one has to be
+able to measure its present position and velocity accurately. The obvious way to do this is to shine light on the particle.
+Some of the waves of light will be scattered by the particle and this will indicate its position. However, one will not be able
+to determine the position of the particle more accurately than the distance between the wave crests of light, so one needs
+to use light of a short wavelength in order to measure the position of the particle precisely. Now, by Planck’s quantum
+hypothesis, one cannot use an arbitrarily small amount of light; one has to use at least one quantum. This quantum will
+disturb the particle and change its velocity in a way that cannot be predicted. moreover, the more accurately one
+measures the position, the shorter the wavelength of the light that one needs and hence the higher the energy of a single
+quantum. So the velocity of the particle will be disturbed by a larger amount. In other words, the more accurately you try
+to measure the position of the particle, the less accurately you can measure its speed, and vice versa. Heisenberg
+showed that the uncertainty in the position of the particle times the uncertainty in its velocity times the mass of the
+particle can never be smaller than a certain quantity, which is known as Planck’s constant. Moreover, this limit does not
+depend on the way in which one tries to measure the position or velocity of the particle, or on the type of particle:
+Heisenberg’s uncertainty principle is a fundamental, inescapable property of the world.
+The uncertainty principle had profound implications for the way in which we view the world. Even after more than seventy
+years they have not been fully appreciated by many philosophers, and are still the subject of much controversy. The
+uncertainty principle signaled an end to Laplace’s dream of a theory of science, a model of the universe that would be
+completely deterministic: one certainly cannot predict future events exactly if one cannot even measure the present state
+of the universe precisely! We could still imagine that there is a set of laws that determine events completely for some
+supernatural being, who could observe the present state of the universe without disturbing it. However, such models of
+the universe are not of much interest to us ordinary mortals. It seems better to employ the principle of economy known as
+Occam’s razor and cut out all the features of the theory that cannot be observed. This approach led Heisenberg, Erwin
+Schrodinger, and Paul Dirac in the 1920s to reformulate mechanics into a new theory called quantum mechanics, based
+on the uncertainty principle. In this theory particles no longer had separate, well-defined positions and velocities that
+could not be observed, Instead, they had a quantum state, which was a combination of position and velocity.
+In general, quantum mechanics does not predict a single definite result for an observation. Instead, it predicts a number
+of different possible outcomes and tells us how likely each of these is. That is to say, if one made the same measurement
+on a large number of similar systems, each of which started off in the same way, one would find that the result of the
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/c.html (1 of 5) [2/20/2001 3:14:40 AM]
+A Brief History of Time - Stephen Hawking... Chapter 4
+measurement would be A in a certain number of cases, B in a different number, and so on. One could predict the
+approximate number of times that the result would be A or B, but one could not predict the specific result of an individual
+measurement. Quantum mechanics therefore introduces an unavoidable element of unpredictability or randomness into
+science. Einstein objected to this very strongly, despite the important role he had played in the development of these
+ideas. Einstein was awarded the Nobel Prize for his contribution to quantum theory. Nevertheless, Einstein never
+accepted that the universe was governed by chance; his feelings were summed up in his famous statement “God does
+not play dice.” Most other scientists, however, were willing to accept quantum mechanics because it agreed perfectly with
+experiment. Indeed, it has been an outstandingly successful theory and underlies nearly all of modern science and
+technology. It governs the behavior of transistors and integrated circuits, which are the essential components of
+electronic devices such as televisions and computers, and is also the basis of modern chemistry and biology. The only
+areas of physical science into which quantum mechanics has not yet been properly incorporated are gravity and the
+large-scale structure of the universe.
+Although light is made up of waves, Planck’s quantum hypothesis tells us that in some ways it behaves as if it were
+composed of particles: it can be emitted or absorbed only in packets, or quanta. Equally, Heisenberg’s uncertainty
+principle implies that particles behave in some respects like waves: they do not have a definite position but are “smeared
+out” with a certain probability distribution. The theory of quantum mechanics is based on an entirely new type of
+mathematics that no longer describes the real world in terms of particles and waves; it is only the observations of the
+world that may be described in those terms. There is thus a duality between waves and particles in quantum mechanics:
+for some purposes it is helpful to think of particles as waves and for other purposes it is better to think of waves as
+particles. An important consequence of this is that one can observe what is called interference between two sets of
+waves or particles. That is to say, the crests of one set of waves may coincide with the troughs of the other set. The two
+sets of waves then cancel each other out rather than adding up to a stronger wave as one might expect Figure 4:1.
+A familiar example of interference in the case of light is the colors that are often seen in soap bubbles. These are caused
+by reflection of light from the two sides of the thin film of water forming the bubble. White light consists of light waves of
+all different wavelengths, or colors, For certain wavelengths the crests of the waves reflected from one side of the soap
+film coincide with the troughs reflected from the other side. The colors corresponding to these wavelengths are absent
+from the reflected light, which therefore appears to be colored. Interference can also occur for particles, because of the
+duality introduced by quantum mechanics. A famous example is the so-called two-slit experiment Figure 4:2.
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/c.html (2 of 5) [2/20/2001 3:14:40 AM]
+Consider a partition with two narrow parallel slits in it. On one side of the partition one places a source of fight of a
+particular color (that is, of a particular wavelength). Most of the light will hit the partition, but a small amount will go
+through the slits. Now suppose one places a screen on the far side of the partition from the light. Any point on the screen
+will receive waves from the two slits. However, in general, the distance the light has to travel from the source to the
+screen via the two slits will be different. This will mean that the waves from the slits will not be in phase with each other
+when they arrive at the screen: in some places the waves will cancel each other out, and in others they will reinforce
+each other. The result is a characteristic pattern of light and dark fringes.
+The remarkable thing is that one gets exactly the same kind of fringes if one replaces the source of light by a source of
+particles such as electrons with a definite speed (this means that the corresponding waves have a definite length). It
+seems the more peculiar because if one only has one slit, one does not get any fringes, just a uniform distribution of
+electrons across the screen. One might therefore think that opening another slit would just increase the number of
+electrons hitting each point of the screen, but, because of interference, it actually decreases it in some places. If
+electrons are sent through the slits one at a time, one would expect each to pass through one slit or the other, and so
+behave just as if the slit it passed through were the only one there – giving a uniform distribution on the screen. In reality,
+however, even when the electrons are sent one at a time, the fringes still appear. Each electron, therefore, must be
+file:///C|/WINDOWS/Desktop/blahh/Stephen Hawking - A brief history of time/c.html (3 of 5) [2/20/2001 3:14:40 AM]
+A Brief History of Time - Stephen Hawking... Chapter 4
+passing through both slits at the same time!
+The phenomenon of interference between particles has been crucial to our understanding of the structure of atoms, the
+basic units of chemistry and biology and the building blocks out of which we, and everything around us, are made. At the
+beginning of this century it was thought that atoms were rather like the planets orbiting the sun, with electrons (particles
+of negative electricity) orbiting around a central nucleus, which carried positive electricity. The attraction between the
+positive and negative electricity was supposed to keep the electrons in their orbits in the same way that the gravitational
+attraction between the sun and the planets keeps the planets in their orbits. The trouble with this was that the laws of
+mechanics and electricity, before quantum mechanics, predicted that the electrons would lose energy and so spiral
+inward until they collided with the nucleus. This would mean that the atom, and indeed all matter, should rapidly collapse
+to a state of very high density. A partial solution to this problem was found by the Danish scientist Niels Bohr in 1913. He
+suggested that maybe the electrons were not able to orbit at just any distance from the central nucleus but only at certain
+specified distances. If one also supposed that only one or two electrons could orbit at any one of these distances, this
+would solve the problem of the collapse of the atom, because the electrons could not spiral in any farther than to fill up
+the orbits with e least distances and energies.
+This model explained quite well the structure of the simplest atom, hydrogen, which has only one electron orbiting around
+the nucleus. But it was not clear how one ought to extend it to more complicated atoms. Moreover, the idea of a limited
+set of allowed orbits seemed very arbitrary. The new theory of quantum mechanics resolved this difficulty. It revealed that
+an electron orbiting around the nucleus could be thought of as a wave, with a wavelength that depended on its velocity.
+For certain orbits, the length of the orbit would correspond to a whole number (as opposed to a fractional number) of
+wavelengths of the electron. For these orbits the wave crest would be in the same position each time round, so the
+waves would add up: these orbits would correspond to Bohr’s allowed orbits. However, for orbits whose lengths were not
+a whole number of wavelengths, each wave crest would eventually be canceled out by a trough as the electrons went
+round; these orbits would not be allowed.
+A nice way of visualizing the wave/particle duality is the so-called sum over histories introduced by the American scientist
+Richard Feynman. In this approach the particle is not supposed to have a single history or path in space-time, as it would
+in a classical, nonquantum theory. Instead it is supposed to go from A to B by every possible path. With each path there
+are associated a couple of numbers: one represents the size of a wave and the other represents the position in the cycle
+(i.e., whether it is at a crest or a trough). The probability of going from A to B is found by adding up the waves for all the
+paths. In general, if one compares a set of neighboring paths, the phases or positions in the cycle will differ greatly. This
+means that the waves associated with these paths will almost exactly cancel each other out. However, for some sets of
+neighboring paths the phase will not vary much between paths. The waves for these paths will not cancel out Such paths
+correspond to Bohr’s allowed orbits.
+With these ideas, in concrete mathematical form, it was relatively straightforward to calculate the allowed orbits in more
+complicated atoms and even in molecules, which are made up of a number of atoms held together by electrons in orbits
+that go round more than one nucleus. Since the structure of molecules and their reactions with each other underlie all of
+chemistry and biology, quantum mechanics allows us in principle to predict nearly everything we see around us, within
+the limits set by the uncertainty principle. (In practice, however, the calculations required for systems containing more
+than a few electrons are so complicated that we cannot do them.)
+Einstein’s general theory of relativity seems to govern the large-scale structure of the universe. It is what is called a
+classical theory; that is, it does not take account of the uncertainty principle of quantum mechanics, as it should for
+consistency with other theories. The reason that this does not lead to any discrepancy with observation is that all the
+gravitational fields that we normally experience are very weak. How-ever, the singularity theorems discussed earlier
+indicate that the gravitational field should get very strong in at least two situations, black holes and the big bang. In such
+strong fields the effects of quantum mechanics should be important. Thus, in a sense, classical general relativity, by
+predicting points of infinite density, predicts its own downfall, just as classical (that is, nonquantum) mechanics predicted
+its downfall by suggesting that atoms should collapse to infinite density. We do not yet have a complete consistent theory
+that unifies general relativity and quantum mechanics, but we do know a number of the features it should have. The
+consequences that these would have for black holes and the big bang will be described in later chapters. For the
+moment, however, we shall turn to the recent attempts to bring together our understanding of the other forces of nature
+into a single, unified quantum theory.
+
