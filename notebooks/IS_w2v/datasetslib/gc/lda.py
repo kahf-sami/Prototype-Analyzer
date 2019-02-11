@@ -1,19 +1,20 @@
 import numpy as np
-from .vocab import Vocab as Vocab
+from .vocab import Vocab
 from scipy.sparse import csr_matrix
-from .. import utility
+import utility
 from sklearn.decomposition import LatentDirichletAllocation
 
 class LDA(Vocab):
 
-    def __init__(self, dataSetPath):
-        super().__init__(dataSetPath)
+    def __init__(self, datasetProcessor):
+        super().__init__(datasetProcessor)
         self.iteration = 500
         self.verbose = 1
-        self.perplexity = 20
+        self.perplexity = 10
         self.numberOfTopics = 10
         self.wordCoOccurenceVector = None
         self.topics = {}
+        self._load()
         return
 
     def setNumberOfIterations(self, number):

@@ -1,173 +1,153 @@
-from .common import Common
-import numpy, sys, os
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from sklearn.datasets import fetch_20newsgroups
-from sklearn.decomposition import NMF, LatentDirichletAllocation
-import iterators, utility
+from __future__ import division
+import numpy as np
+from .vocab import Vocab
 from scipy.sparse import csr_matrix
+import utility
+from sklearn.decomposition import LatentDirichletAllocation
 
-class LDA(Common):
+class LDA(Vocab):
 
+	def __init__(self, datasetProcessor):
+		super().__init__(datasetProcessor)
+		self.iteration = 100
+		self.verbose = 1
+		self.perplexity = 10
+		self.numberOfTopics = 10
+		self.wordCoOccurenceVector = None
+		self.topics = {}
+		self._load()
+		self.loadWordCoOccurenceVectorsFromFile()
+		self.loadTopics()
+		return
 
-	def __init__(self):
-		super().__init__()
-		config = utility.Config()
-		self.filePath = utility.File.join('/home/apache/hosts/WSBprojects/SP-PySystem', 'data', config.getProjectId())
-
-		directory = utility.Directory(self.filePath)
-		if not directory.exists():
-			directory.create()
-		self.fileLabelPath = ''
-		self.lda = None
-		self.labels = []
+	def setNumberOfIterations(self, number):
+		self.iteration = number
 		return
 
 
-	def getTermTermVectors(self):
-		filePath = utility.File.join(self.filePath, 'lda.npz')
-		self.fileLabelPath = utility.File.join(self.filePath, 'label-lda.npz')
-
-		wordIds = self.lCStorer.getAllImportantIds()
-		total = len(wordIds)
-		savedVectors = self.loadSparseCsr(filePath, total)		
-
-		if str(type(savedVectors)) == "<class 'scipy.sparse.csr.csr_matrix'>":
-			return savedVectors
-
-		cursor = self.wordStorer.getWordsByBatch('wordid,word', True)
-
-		data = []
-		rows = []
-		columns = []
-		self.labels = []
-		rowIndex = 0
-		
-		for word in cursor:
-			columnIndex = 0
-			for otherWord in wordIds:
-				totalRelated = self.lCStorer.howManyTimes(word[0], otherWord[0])
-				if totalRelated and totalRelated[0]:
-					columns.append(columnIndex)
-					rows.append(rowIndex)
-					data.append(totalRelated[0])
-				columnIndex = columnIndex + 1
-			
-			self.labels.append(word[0])
-			rowIndex = rowIndex + 1
-		
-		vectors = csr_matrix((data, (rows, columns)), shape=(total, total))
-		self.saveSparseCsr(filePath, vectors)
-		numpy.savez(self.fileLabelPath, self.labels)
-		return vectors
-
-
-	def getTermDocument(self):
-		filePath = utility.File.join(self.filePath, 'td-lda.npz')
-		self.fileLabelPath = utility.File.join(self.filePath, 'label-td-lda.npz')
-		
-		contentIds = self.contentStorer.getAllIds()
-		total = len(contentIds)
-		
-		savedVectors = self.loadSparseCsr(filePath, total)
-		
-		if str(type(savedVectors)) == "<class 'scipy.sparse.csr.csr_matrix'>":
-			return savedVectors
-
-		data = []
-		rows = []
-		columns = []
-		rowIndex = 0
-		indexes = {}
-		newIndex = 0
-		self.labels = []
-		for contentId in contentIds:
-			words = self.lCStorer.getWordsInAContent(contentId[0])
-			for word in words:
-				if word[0] in indexes.keys():
-					columns.append(indexes[word[0]])
-				else:
-					self.labels.append(word[0])
-					indexes[word[0]] = newIndex
-					columns.append(newIndex)
-					newIndex = newIndex + 1
-
-				rows.append(rowIndex)
-				data.append(1)
-			
-			rowIndex = rowIndex + 1 
-
-		vectors = csr_matrix((data, (rows, columns)), shape=(total, newIndex))
-		self.saveSparseCsr(filePath, vectors)
-		numpy.savez(self.fileLabelPath, self.labels)
-		return vectors
- 
-
-	def loadLabels(self):
-		self.labels = numpy.load(self.fileLabelPath)
+	def setPerplexity(self, perplexity):
+		self.perplexity = perplexity
 		return
 
 
-	def process(self, useTermTermVector = False):
-		vectors = None
-		if useTermTermVector:
-			vectors = self.getTermTermVectors()
-		else:
-			vectors = self.getTermDocument()
+	def setVerbose(self, verbose):
+		self.verbose = verbose
+		return
 
-		if not self.labels:
-			self.loadLabels()
 
-		self.lda = LatentDirichletAllocation(n_components=100, max_iter=500, learning_method='online', learning_offset=5.,random_state=0).fit(vectors)
+	def loadWordCoOccurenceVectorsFromFile(self):
+		self.wordCoOccurenceVector = self.__loadSparseCsr()
+		print('-- loadWordCoOccurenceVectorsFromFile --')
+		print(self.wordCoOccurenceVector)
+		return self.wordCoOccurenceVector
+
+
+	def loadTopics(self):
+		self.__loadLdaTopics()
+		return self.topics
+
+	def buildWordCoOccurenceVectors(self):
+		if not self.datasetProcessor:
+			print('Failed to prepare word co-occurance matrix. Undefined dataset processor.')
+			return
+
+		vocabSize = len(self.vocab)
+		self.wordCoOccurenceVector = np.zeros((vocabSize, vocabSize))
+		if len(self.processedSentences) == 0:
+			return
+
+		for sentence in self.wordCoOccurenceVector:
+			for word1Index in sentence:
+				for word2Index in sentence:
+					if word1Index == word2Index:
+						continue
+					else:
+						self.wordCoOccurenceVector[word1Index][word2Index] += 1
+
+
+		self.__convertToSparseMatrix()
+		self.__saveSparseCsr(self.wordCoOccurenceVector)
+		return self.wordCoOccurenceVector
+
+
+	def train(self):
+		print(self.wordCoOccurenceVector)
+		lda = LatentDirichletAllocation(n_components=self.numberOfTopics, max_iter=self.iteration, learning_method='online', learning_offset=1.0,random_state=0).fit(self.wordCoOccurenceVector)
 		wordScores = {}
 
-		for topic_idx, topics in enumerate(self.lda.components_):
+		vocabId2Word = {}
+		for word in self.vocab:
+			vocabId2Word[self.vocab[word]['index']] = word
+
+		self.topics = {}
+		for topic_idx, topics in enumerate(lda.components_):
 			for i in topics.argsort():
-				if i in wordScores.keys():
-					if wordScores[i]['score'] < topics[i]:
-						wordScores[i]['score'] = topics[i]
-						wordScores[i]['topic'] = topic_idx
-				else:
-					wordScores[i] = {}
-					wordScores[i]['score'] = topics[i]
-					wordScores[i]['topic'] = topic_idx
-					wordScores[i]['word'] = self.labels[i]
-
-		topicWords = {}
-		for i in wordScores.keys():
-			if wordScores[i]['topic'] not in topicWords.keys():
-				topicWords[wordScores[i]['topic']] = []
-			topicWords[wordScores[i]['topic']].append(wordScores[i]['word'])
-			data = {}
-			data['wordid'] = self.labels[i]
-			data['color'] = wordScores[i]['topic']
-
-			self.wordStorer.save(data, False)
+				word = vocabId2Word[i]
+				if word in self.topics.keys():
+					if self.topics[word] < topics[i]:
+						self.topics[word] = topic_idx
+					else:
+						self.topics[word] = topic_idx
 
 		
-		for topicIndex in topicWords:
-			print(topicWords[topicIndex])
-			print('-----------------------------------------------')
-
-		print('Total Clusters: ' + str(len(topicWords)))
-		
+		self.__saveLdaTopics()
 		return
 
-	def saveSparseCsr(self, filename, array):
-		numpy.savez(filename, data=array.data, indices=array.indices, indptr=array.indptr, shape=array.shape)
 
-		
-	def loadSparseCsr(self, filename, total):
-		file = utility.File(filename)
+	def __saveSparseCsr(self, vectors):
+		path = self.datasetProcessor.getDatasetPath()
+		filePath = utility.File.join(path, 'word_cooccurence.npz')
+		file = utility.File(filePath)
+		file.remove()
+		np.savez(filePath, data=vectors.data, indices=vectors.indices, indptr=vectors.indptr, shape=vectors.shape)
+		return
+
+
+	def __saveLdaTopics(self):
+		path = self.datasetProcessor.getDatasetPath()
+		filePath = utility.File.join(path, 'lda.npz')
+		file = utility.File(filePath)
+		file.remove()
+		np.savez(filePath, self.topics)
+		return
+
+
+	def __loadLdaTopics(self):
+		path = self.datasetProcessor.getDatasetPath()
+		filePath = utility.File.join(path, 'lda.npz')
+		file = utility.File(filePath)
+		if not file.exists():
+			return
+		self.topics = np.load(filePath)
+		return
+
+
+	def __loadSparseCsr(self):
+		path = self.datasetProcessor.getDatasetPath()
+		filePath = utility.File.join(path, 'word_cooccurence.npz')
+		file = utility.File(filePath)
 		if(not file.exists()):
 			return None
 
-
-		loader = numpy.load(filename)
-		if ((loader['shape'][0] != loader['shape'][1]) or (loader['shape'][0] != total)):
+		loader = np.load(filePath)
+		if ((loader['shape'][0] != loader['shape'][1])):
 			return None
 
-		
 		return csr_matrix((loader['data'], loader['indices'], loader['indptr']), shape=loader['shape'])
 
 
+	def __convertToSparseMatrix(self):
+		vocabSize = len(self.vocab)
+		data = []
+		rows = []
+		columns = []
+		for i in range(0, vocabSize):
+			for j in range(0, vocabSize):
+				if self.wordCoOccurenceVector[i][j] > 0:
+					rows.append(i)
+					columns.append(j)
+					data.append(self.wordCoOccurenceVector[i][j])
+
+		self.wordCoOccurenceVector = csr_matrix((data, (rows, columns)), shape=(vocabSize, vocabSize))
+		return
 

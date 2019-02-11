@@ -12,18 +12,11 @@ class Vocab():
         self.index = 0
         self.allowedPOSTypes = ['NN', 'NNP', 'NNS', 'NNPS']
         self.processedSentences = []
-        self.minBlocks = 5
-        self._load()
         return
 
     
     def setDatasetPath(self, path):
         self.datasetPath = path
-        return
-
-
-    def setMinBlocks(self, minBlock):
-        self.minBlocks = minBlock
         return
 
 
