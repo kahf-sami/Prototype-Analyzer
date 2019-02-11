@@ -62,7 +62,13 @@ class Vocab():
         file = utility.File(filePath)
         if not file.exists():
             return
-        self.processedSentences = list(numpy.load(filePath))
+        loadedSentences = numpy.load(filePath)
+
+        self.processedSentences = []
+        for fileRef in loadedSentences:
+            for sentence in loadedSentences[fileRef]:
+                self.processedSentences.append(sentence)
+
         return
 
 

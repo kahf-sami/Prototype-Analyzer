@@ -52,7 +52,9 @@ class LDA(Vocab):
 			return
 
 		vocabSize = len(self.vocab)
+		print(vocabSize)
 		self.wordCoOccurenceVector = np.zeros((vocabSize, vocabSize))
+		print(self.processedSentences)
 		if len(self.processedSentences) == 0:
 			return
 
