@@ -40,17 +40,13 @@ class Plotter():
         if not len(self.wordInfo):
             return None
 
-        pointsCount = 0
         points = []
         for word in self.wordInfo:
             point = {}
             point['x'] = word['x']
             point['y'] = word['y']
-            point['color'] = self.colors['topic']
-            point['label'] = word['pure_word']
+            point['color'] = self.colors[word['topic']]
+            point['label'] = word['label']
             points.append(point)
-            pointsCount += 1
-            if pointsCount >= self.totalPoints:
-                break
 
         return points

@@ -20,6 +20,9 @@ class Vocab():
         return
 
 
+    def getVocab(self):
+        return self.vocab
+
     '''
     allOptions = ['NN', 'NNP', 'NNS', 'NNPS', 'JJ', 'JJR', 'JJS' 'RB', 'RBR', 'RBS', 'VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
     '''
@@ -30,7 +33,7 @@ class Vocab():
 
     def buildVocab(self):
         self.datasetProcessor.resetFileIndex()
-        details = self.datasetProcessor.getNextTextBlockDetails()
+        details = self.datasetProcessor.getNextTextBlockDetails('all')
         while details:
             self.__processText(details['text'])
             details = self.datasetProcessor.getNextTextBlockDetails()

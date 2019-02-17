@@ -36,14 +36,15 @@ class LDA(Vocab):
         self.wordCoOccurenceVector = self.__loadSparseCsr()
         return self.wordCoOccurenceVector
 
+
     def loadTopics(self):
         self.__loadLdaTopics()
         return self.topics
 
 
     def buildWordCoOccurenceVectors(self, saveInFile = False):
-        if not self.dataSetPath:
-            print('Failed to prepare word co-occurance matrix. Undefined dataset path.')
+        if not self.datasetProcessor:
+            print('Failed to prepare word co-occurance matrix. Undefined dataset processor.')
             return
 
         if self.wordCoOccurenceVector:

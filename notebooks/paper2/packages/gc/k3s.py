@@ -12,21 +12,24 @@ class K3S(LDA):
 
 
     def setMaxRadius(self, attribute = 'number_of_blocks'):
-        for word in self.wordInfo:
-            if self.max < self.wordInfo['word'][attribute]:
-                self.max = self.wordInfo['word'][attribute]
+        for word in self.vocab:
+            if self.max < self.vocab[word][attribute]:
+                self.max = self.vocab[word][attribute]
 
         return
 
 
+    '''
     def getPoints(self, totalToDisplay = 100, attribute = 'number_of_blocks'):
         thetaIncrement = 360 / totalToDisplay
         currentTheta = 0
         currentIndex = 0
-        for word in self.wordInfo:
-            self.wordInfo[word]['topic'] = self.topics[self.wordInfo[word]['index']]
+        for word in self.vocab:
+            self.wordInfo[word]['topic'] = self.topics[word]
             currentIndex += 1
             if currentIndex < totalToDisplay:
                 processedWordInfo.append(self.wordInfo[word])
 
         return processedWordInfo
+
+    '''

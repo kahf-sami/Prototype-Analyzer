@@ -9,7 +9,7 @@ class LDA(Vocab):
 
 	def __init__(self, datasetProcessor):
 		super().__init__(datasetProcessor)
-		self.iteration = 100
+		self.iteration = 500
 		self.verbose = 1
 		self.perplexity = 10
 		self.numberOfTopics = 10
@@ -37,8 +37,8 @@ class LDA(Vocab):
 
 	def loadWordCoOccurenceVectorsFromFile(self):
 		self.wordCoOccurenceVector = self.__loadSparseCsr()
-		print('-- loadWordCoOccurenceVectorsFromFile --')
-		print(self.wordCoOccurenceVector)
+		#print('-- loadWordCoOccurenceVectorsFromFile --')
+		#print(self.wordCoOccurenceVector)
 		return self.wordCoOccurenceVector
 
 
@@ -52,13 +52,13 @@ class LDA(Vocab):
 			return
 
 		vocabSize = len(self.vocab)
-		print(vocabSize)
+		#print('Vocab size:', vocabSize)
 		self.wordCoOccurenceVector = np.zeros((vocabSize, vocabSize))
-		print(self.processedSentences)
+		#print('total sentences: ', len(self.processedSentences))
 		if len(self.processedSentences) == 0:
 			return
 
-		for sentence in self.wordCoOccurenceVector:
+		for sentence in self.processedSentences:
 			for word1Index in sentence:
 				for word2Index in sentence:
 					if word1Index == word2Index:
@@ -69,11 +69,12 @@ class LDA(Vocab):
 
 		self.__convertToSparseMatrix()
 		self.__saveSparseCsr(self.wordCoOccurenceVector)
+
+		#print(self.wordCoOccurenceVector)
 		return self.wordCoOccurenceVector
 
 
 	def train(self):
-		print(self.wordCoOccurenceVector)
 		lda = LatentDirichletAllocation(n_components=self.numberOfTopics, max_iter=self.iteration, learning_method='online', learning_offset=1.0,random_state=0).fit(self.wordCoOccurenceVector)
 		wordScores = {}
 
@@ -84,15 +85,19 @@ class LDA(Vocab):
 		self.topics = {}
 		for topic_idx, topics in enumerate(lda.components_):
 			for i in topics.argsort():
+				#print('---------------------')
 				word = vocabId2Word[i]
+				#print(self.topics.keys())
+				#print(word)
 				if word in self.topics.keys():
 					if self.topics[word] < topics[i]:
 						self.topics[word] = topic_idx
-					else:
-						self.topics[word] = topic_idx
+				else:
+					self.topics[word] = topic_idx
 
-		
+		#print(self.topics)
 		self.__saveLdaTopics()
+		print("Finished training LDA")
 		return
 
 
@@ -106,11 +111,18 @@ class LDA(Vocab):
 
 
 	def __saveLdaTopics(self):
+		topicsToSave = []
+		for word in self.topics:
+			topicToSave = {}
+			topicToSave['word'] = word
+			topicToSave['topic'] = self.topics[word]
+			topicsToSave.append(topicToSave)
+
 		path = self.datasetProcessor.getDatasetPath()
 		filePath = utility.File.join(path, 'lda.npz')
 		file = utility.File(filePath)
 		file.remove()
-		np.savez(filePath, self.topics)
+		np.savez(filePath, topicsToSave)
 		return
 
 
@@ -120,7 +132,15 @@ class LDA(Vocab):
 		file = utility.File(filePath)
 		if not file.exists():
 			return
-		self.topics = np.load(filePath)
+		topicsFromFile = np.load(filePath)
+
+		self.topics = {}
+		for fileRef in topicsFromFile:
+			for word in topicsFromFile[fileRef]:
+				#print(word)
+				#print('---------------------------')
+				self.topics[word['word']] = word['topic']
+
 		return
 
 
