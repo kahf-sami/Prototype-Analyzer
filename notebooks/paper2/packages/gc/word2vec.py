@@ -2,7 +2,7 @@ from .lda import LDA
 import tensorflow as tf
 import utility
 import numpy as np
-
+from sklearn.manifold import TSNE as skTSNE
 
 
 class Word2Vec(LDA):
@@ -23,6 +23,10 @@ class Word2Vec(LDA):
         self.numberOfEpochs = 500
         self.learningRate = 0.5
         self.validSize = 8
+        self.perplexity = 10
+        self.numberOfComponents = 10
+        self.numberOfIterations = 250
+        self.learnedEmbeddings = None
         return
     
 
@@ -176,25 +180,39 @@ class Word2Vec(LDA):
                     epochLoss = epochLoss / nBatches
                     print('\nAverage loss after epoch ', epoch, ': ', epochLoss)
 
-                    # print closest words to validation set at end of every epoch
-                    similarity_scores = tfs.run(similarity)
-            
-                    top_k = 5
-                    for i in range(self.validSize):
-                        similar_words = (-similarity_scores[i, :]).argsort()[1:top_k + 1]
-                        stemmedWord = self.id2Word[x_valid[i]]
-                        similar_str = 'Similar to {0:}:'.format(self.vocab[stemmedWord]['label'])
-                        for k in range(top_k):
-                            stemmedWord = self.id2Word[similar_words[k]]
-                            similar_str = '{0:} {1:},'.format(similar_str, self.vocab[stemmedWord]['label'])
-                        print(similar_str)
+                # print closest words to validation set at end of every epoch
+                similarity_scores = tfs.run(similarity)
+        
+                top_k = 5
+                for i in range(self.validSize):
+                    similar_words = (-similarity_scores[i, :]).argsort()[1:top_k + 1]
+                    stemmedWord = self.id2Word[x_valid[i]]
+                    similar_str = 'Similar to {0:}:'.format(self.vocab[stemmedWord]['label'])
+                    for k in range(top_k):
+                        stemmedWord = self.id2Word[similar_words[k]]
+                        similar_str = '{0:} {1:},'.format(similar_str, self.vocab[stemmedWord]['label'])
+                    print(similar_str)
                     
-                finalEmbeddings = tfs.run(normalizedEmbeddings)
-                path = self.datasetProcessor.getDatasetPath()
-                filePath = utility.File.join(path, 'model.ckpt')
-                save_path = saver.save(tfs, filePath)
-                print('Saving model in ', save_path)
+            finalEmbeddings = tfs.run(normalizedEmbeddings)
+            path = self.datasetProcessor.getDatasetPath()
+            filePath = utility.File.join(path, 'model.ckpt')
+            save_path = saver.save(tfs, filePath)
+            print('Saving model in ', save_path)
+            self.trainTSNE(finalEmbeddings)
         return
+
+
+    def trainTSNE(self, embedding):
+        tsne = skTSNE(perplexity=self.perplexity, 
+            n_components=self.numberOfComponents, 
+            init='pca', 
+            n_iter=self.numberOfIterations, 
+            method='exact')
+        self.learnedEmbeddings = tsne.fit_transform(embedding)
+        self.__saveTSNE()
+        print('Trained for TSNE')
+        return
+
 
 
     def to2d(self, x,unit_axis=1):
@@ -238,6 +256,15 @@ class Word2Vec(LDA):
         return
 
 
+    def __saveTSNE(self):
+        path = self.datasetProcessor.getDatasetPath()
+        filePath = utility.File.join(path, 'gc-tsne.npz')
+        file = utility.File(filePath)
+        file.remove()
+        np.savez(filePath, self.learnedEmbeddings)
+        return
+
+
     def __saveEmbedding(self, embedding):
         '''
         path = self.datasetProcessor.getDatasetPath()
@@ -250,16 +277,9 @@ class Word2Vec(LDA):
 
 
     def __loadEmbedding(self):
-        '''
         path = self.datasetProcessor.getDatasetPath()
-        filePath = utility.File.join(path, 'tsne.npz')
-        file = utility.File(filePath)
-        if not file.exists():
-            return
-        embeddingFromFile = np.load(filePath)
-
-        self.learnedEmbeddings = None
-        for fileRef in embeddingFromFile:
-            self.learnedEmbeddings =  embeddingFromFile[fileRef]
-        '''
+        filePath = utility.File.join(path, 'model.ckpt')
+        saver = tf.train.Saver()
+        with tf.Session() as tfs:
+            saver.restore(tfs, filePath)
         return
