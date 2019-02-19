@@ -16,8 +16,6 @@ class LDA(Vocab):
 		self.wordCoOccurenceVector = None
 		self.topics = {}
 		self._load()
-		self.loadWordCoOccurenceVectorsFromFile()
-		self.loadTopics()
 		return
 
 	def setNumberOfIterations(self, number):
@@ -30,21 +28,15 @@ class LDA(Vocab):
 		return
 
 
+	def setNumberOfTopics(self, numberOfTopics):
+		self.numberOfTopics = numberOfTopics
+		return
+
+
 	def setVerbose(self, verbose):
 		self.verbose = verbose
 		return
 
-
-	def loadWordCoOccurenceVectorsFromFile(self):
-		self.wordCoOccurenceVector = self.__loadSparseCsr()
-		#print('-- loadWordCoOccurenceVectorsFromFile --')
-		#print(self.wordCoOccurenceVector)
-		return self.wordCoOccurenceVector
-
-
-	def loadTopics(self):
-		self.__loadLdaTopics()
-		return self.topics
 
 	def buildWordCoOccurenceVectors(self):
 		if not self.datasetProcessor:
@@ -59,6 +51,7 @@ class LDA(Vocab):
 			return
 
 		for sentence in self.processedSentences:
+			print(sentence)
 			for word1Index in sentence:
 				for word2Index in sentence:
 					if word1Index == word2Index:
@@ -101,9 +94,17 @@ class LDA(Vocab):
 		return
 
 
+	def _load(self):
+		super()._load()
+		wordCoOccurenceVector = self.__loadSparseCsr()
+		if wordCoOccurenceVector is not None:
+			self.wordCoOccurenceVector = wordCoOccurenceVector
+		self.__loadLdaTopics()
+		return
+
+
 	def __saveSparseCsr(self, vectors):
-		path = self.datasetProcessor.getDatasetPath()
-		filePath = utility.File.join(path, 'word_cooccurence.npz')
+		filePath = self._getFilePath('word_cooccurence.npz')
 		file = utility.File(filePath)
 		file.remove()
 		np.savez(filePath, data=vectors.data, indices=vectors.indices, indptr=vectors.indptr, shape=vectors.shape)
@@ -118,35 +119,24 @@ class LDA(Vocab):
 			topicToSave['topic'] = self.topics[word]
 			topicsToSave.append(topicToSave)
 
-		path = self.datasetProcessor.getDatasetPath()
-		filePath = utility.File.join(path, 'lda.npz')
-		file = utility.File(filePath)
-		file.remove()
-		np.savez(filePath, topicsToSave)
+		self._saveNumpy('lda.npz', topicsToSave)
 		return
 
 
 	def __loadLdaTopics(self):
-		path = self.datasetProcessor.getDatasetPath()
-		filePath = utility.File.join(path, 'lda.npz')
-		file = utility.File(filePath)
-		if not file.exists():
-			return
-		topicsFromFile = np.load(filePath)
-
+		topicsFromFile = self._loadNumpy('lda.npz')
 		self.topics = {}
-		for fileRef in topicsFromFile:
-			for word in topicsFromFile[fileRef]:
-				#print(word)
-				#print('---------------------------')
-				self.topics[word['word']] = word['topic']
+
+		if topicsFromFile is not None:
+			for word in topicsFromFile:
+				if 'topic' in word.keys():
+					self.topics[word['word']] = word['topic']
 
 		return
 
 
 	def __loadSparseCsr(self):
-		path = self.datasetProcessor.getDatasetPath()
-		filePath = utility.File.join(path, 'word_cooccurence.npz')
+		filePath = self._getFilePath('word_cooccurence.npz')
 		file = utility.File(filePath)
 		if(not file.exists()):
 			return None

@@ -6,3 +6,4 @@ from .plotter import Plotter
 from .peripheral import Peripheral
 from .linear import Linear
 from .word2vec import Word2Vec
+from .store import Store

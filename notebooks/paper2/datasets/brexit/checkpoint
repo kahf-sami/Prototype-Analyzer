@@ -1,2 +1,0 @@
-model_checkpoint_path: "/notebooks/paper2/datasets/brexit/model.ckpt"
-all_model_checkpoint_paths: "/notebooks/paper2/datasets/brexit/model.ckpt"

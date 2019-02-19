@@ -80,8 +80,9 @@ class Base():
 			self.filteredWords[word] = self.wordInfo[word]
 			self.filteredWords[word]['index'] = index
 
-		print("Total vocab: ", len(self.wordInfo))
-		print("Filtered vocab: ", len(self.filteredWords))
+		print('----------------------')
+		print("Total local vocab: ", len(self.wordInfo))
+		print("Filtered local vocab: ", len(self.filteredWords))
 		return self.filteredWords
 
 

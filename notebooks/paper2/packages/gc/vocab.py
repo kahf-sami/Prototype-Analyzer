@@ -3,15 +3,19 @@ import lc
 import operator
 import utility
 import numpy
+from .store import Store
+import datetime
 
-class Vocab():
+class Vocab(Store):
     
     def __init__(self, datasetProcessor):
-        self.datasetProcessor = datasetProcessor
+        super().__init__(datasetProcessor)
         self.vocab = {}
         self.index = 0
         self.allowedPOSTypes = ['NN', 'NNP', 'NNS', 'NNPS']
         self.processedSentences = []
+        self._load()
+        self.sequenceIndex = 0
         return
 
     
@@ -22,6 +26,7 @@ class Vocab():
 
     def getVocab(self):
         return self.vocab
+
 
     '''
     allOptions = ['NN', 'NNP', 'NNS', 'NNPS', 'JJ', 'JJR', 'JJS' 'RB', 'RBR', 'RBS', 'VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
@@ -35,7 +40,7 @@ class Vocab():
         self.datasetProcessor.resetFileIndex()
         details = self.datasetProcessor.getNextTextBlockDetails('all')
         while details:
-            self.__processText(details['text'])
+            self.__processText(details)
             details = self.datasetProcessor.getNextTextBlockDetails()
         
         self.__sort()
@@ -47,49 +52,42 @@ class Vocab():
 
 
     def _load(self):
-        path = self.datasetProcessor.getDatasetPath()
-        filePath = utility.File.join(path, 'vocab.npz')
-        file = utility.File(filePath)
-        if not file.exists():
-            return
-
-        words = numpy.load(filePath)
-        self.vocab = {}
-        for fileRef in words:
-            for word in words[fileRef]:
-                stemmedWord = word['stemmed_word']
-                self.vocab[stemmedWord] = word
-
-
-        filePath = utility.File.join(path, 'sentences.npz')
-        file = utility.File(filePath)
-        if not file.exists():
-            return
-        loadedSentences = numpy.load(filePath)
-
-        self.processedSentences = []
-        for fileRef in loadedSentences:
-            for sentence in loadedSentences[fileRef]:
-                self.processedSentences.append(sentence)
-
+        self.__loadVocab()
+        self.__loadSentences()
         return
 
 
     def _save(self):
-        path = self.datasetProcessor.getDatasetPath()
-        filePath = utility.File.join(path, 'vocab.npz')
-        file = utility.File(filePath)
-        file.remove()
-        numpy.savez(filePath, list(self.vocab.values()))
-
-        filePath = utility.File.join(path, 'sentences.npz')
-        file = utility.File(filePath)
-        file.remove()
-        numpy.savez(filePath, self.processedSentences)
+        self._saveNumpy('vocab.npz', list(self.vocab.values()))
+        self._saveNumpy('sentences.npz', list(self.processedSentences))
         return
 
 
-    def __processText(self, text):
+    def __loadVocab(self):
+        vocabData = self._loadNumpy('vocab.npz')
+        if vocabData is not None:
+            for word in vocabData:
+                stemmedWord = word['stemmed_word']
+                self.vocab[stemmedWord] = word
+        return
+
+
+    def __loadSentences(self):
+        print('--- loading sentence ---')
+        sentenceData = self._loadNumpy('sentences.npz')
+        self.processedSentences = []
+        if sentenceData is not None:
+            
+            print(sentenceData)
+            for sentence in sentenceData:
+                print('-----------')
+                print(sentence)
+                self.processedSentences.append(sentence)
+        return
+
+
+    def __processText(self, details):
+        text = details['text']
         lcProcessor = lc.Peripheral(text, 0)
         lcProcessor.setAllowedPosTypes(self.allowedPOSTypes)
         lcProcessor.setPositionContributingFactor(1)
@@ -101,7 +99,7 @@ class Vocab():
         lcProcessor.loadFilteredWords()
 
         localWords = lcProcessor.getWordInfo()
-        self.__addToVocab(localWords)
+        self.__addToVocab(localWords, details)
 
         localSentences = lcProcessor.getSentences()
         self.__addToSentence(localSentences)
@@ -126,7 +124,12 @@ class Vocab():
         return
 
 
-    def __addToVocab(self, words):
+    def __addToVocab(self, words, details):
+        if 'timestamp' in details.keys():
+            self.sequenceIndex = details['timestamp']
+        else:
+            # Counting lines
+            self.sequenceIndex += 1 
         totalWords = len(words)
         if not words:
             return
@@ -134,23 +137,26 @@ class Vocab():
         currentVocabLength = len(self.vocab)
         currentKeys = self.vocab.keys()
         for word in words.keys():
+            currentWordKeys = words[word].keys()
             if word not in currentKeys:
                 wordDetails = {}
                 wordDetails['number_of_blocks'] = 1
                 wordDetails['total_count'] = words[word]['count']
                 wordDetails['label'] = words[word]['pure_word']
                 wordDetails['stemmed_word'] = words[word]['stemmed_word']
-                if 'score' in words[word].keys():
+                if 'score' in currentWordKeys:
                     wordDetails['score'] = words[word]['score']
                 else:
                     wordDetails['score'] = 0
+                if 'appeared' not in currentWordKeys:
+                    wordDetails['appeared'] = self.sequenceIndex
                 wordDetails['index'] = currentVocabLength
                 currentVocabLength += 1
             else:
                 wordDetails = self.vocab[word]
                 wordDetails['number_of_blocks'] += 1
                 wordDetails['total_count'] += words[word]['count']
-                if 'score' in words[word].keys():
+                if 'score' in currentWordKeys:
                     wordDetails['score'] += words[word]['score']
 
             self.vocab[word] = wordDetails
