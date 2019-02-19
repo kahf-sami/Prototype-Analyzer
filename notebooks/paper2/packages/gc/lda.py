@@ -16,6 +16,7 @@ class LDA(Vocab):
 		self.wordCoOccurenceVector = None
 		self.topics = {}
 		self._load()
+		self.topicFilter = None
 		return
 
 	def setNumberOfIterations(self, number):
@@ -38,6 +39,11 @@ class LDA(Vocab):
 		return
 
 
+	def setTopicFilter(self, topicNumber):
+		self.topicFilter = topicNumber
+		return
+
+
 	def buildWordCoOccurenceVectors(self):
 		if not self.datasetProcessor:
 			print('Failed to prepare word co-occurance matrix. Undefined dataset processor.')
@@ -51,7 +57,7 @@ class LDA(Vocab):
 			return
 
 		for sentence in self.processedSentences:
-			print(sentence)
+			#print(sentence)
 			for word1Index in sentence:
 				for word2Index in sentence:
 					if word1Index == word2Index:

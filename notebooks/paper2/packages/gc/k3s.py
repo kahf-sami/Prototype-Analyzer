@@ -17,19 +17,3 @@ class K3S(LDA):
                 self.max = self.vocab[word][attribute]
 
         return
-
-
-    '''
-    def getPoints(self, totalToDisplay = 100, attribute = 'number_of_blocks'):
-        thetaIncrement = 360 / totalToDisplay
-        currentTheta = 0
-        currentIndex = 0
-        for word in self.vocab:
-            self.wordInfo[word]['topic'] = self.topics[word]
-            currentIndex += 1
-            if currentIndex < totalToDisplay:
-                processedWordInfo.append(self.wordInfo[word])
-
-        return processedWordInfo
-
-    '''

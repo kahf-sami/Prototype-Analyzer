@@ -9,19 +9,18 @@ class TSNE(LDA):
 	def __init__(self, dataProcessor):
 		super().__init__(dataProcessor)
 		self.perplexity = 10
-		self.numberOfComponents = 10
-		self.numberOfIterations = 250
+		self.numberOfTopics = 10
+		self.iteration = 250
 		self.learnedEmbeddings = None
-		self.__loadTSNE()
 		return
 
 
 	def train(self):
 		vectors = self.wordCoOccurenceVector.todense()
 		tsne = skTSNE(perplexity=self.perplexity, 
-			n_components=self.numberOfComponents, 
+			n_components=self.numberOfTopics, 
 			init='pca', 
-			n_iter=self.numberOfIterations, 
+			n_iter=self.iteration, 
 			method='exact')
 		self.learnedEmbeddings = tsne.fit_transform(vectors)
 		self.__saveTSNE()
@@ -33,35 +32,40 @@ class TSNE(LDA):
 		currentIndex = 0
 		processedWordInfo = []
 		for word in self.vocab:
+			if (self.topicFilter is not None) and (self.topicFilter != self.topics[word]):
+				continue
+
+			if currentIndex >= totalToDisplay:
+				break
+
 			index = self.vocab[word]['index']
 			self.vocab[word]['topic'] = self.topics[word]
 			self.vocab[word]['x'] = self.learnedEmbeddings[index, 0]
 			self.vocab[word]['y'] = self.learnedEmbeddings[index, 1]
 
 			currentIndex += 1
-			if currentIndex <= totalToDisplay:
-					processedWordInfo.append(self.vocab[word])
+					
+			processedWordInfo.append(self.vocab[word])
 
 		return processedWordInfo
 
+		
+	def _load(self):
+		super()._load()
+		self.__loadTSNE()
+		return
+
 	def __saveTSNE(self):
-		path = self.datasetProcessor.getDatasetPath()
-		filePath = utility.File.join(path, 'tsne.npz')
-		file = utility.File(filePath)
-		file.remove()
-		np.savez(filePath, self.learnedEmbeddings)
+		self._saveNumpy('tsne.npz', self.learnedEmbeddings)
 		return
 
 
 	def __loadTSNE(self):
-		path = self.datasetProcessor.getDatasetPath()
-		filePath = utility.File.join(path, 'tsne.npz')
-		file = utility.File(filePath)
-		if not file.exists():
-			return
-		embeddingFromFile = np.load(filePath)
-
+		embeddingFromFile = self._loadNumpy('tsne.npz')
 		self.learnedEmbeddings = None
+		if embeddingFromFile is None:
+			return
+
 		for fileRef in embeddingFromFile:
 			self.learnedEmbeddings =  embeddingFromFile[fileRef]
 

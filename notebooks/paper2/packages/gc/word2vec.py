@@ -20,12 +20,11 @@ class Word2Vec(LDA):
         self.embeddingSize  = 128
         self.id2Word = {}
         self.__loadIdToWord()
-        self.numberOfEpochs = 500
         self.learningRate = 0.5
         self.validSize = 8
         self.perplexity = 10
-        self.numberOfComponents = 10
-        self.numberOfIterations = 250
+        self.numberOfTopics = 10
+        self.iteration = 250
         self.learnedEmbeddings = None
         return
     
@@ -162,7 +161,7 @@ class Word2Vec(LDA):
         saver = tf.train.Saver()
         with tf.Session() as tfs:
             tf.global_variables_initializer().run()
-            for epoch in range(self.numberOfEpochs):
+            for epoch in range(self.iteration):
                 print("--------------------------")
                 epochLoss = 0
                 self.resetIndex()
@@ -204,15 +203,14 @@ class Word2Vec(LDA):
 
     def trainTSNE(self, embedding):
         tsne = skTSNE(perplexity=self.perplexity, 
-            n_components=self.numberOfComponents, 
+            n_components=self.numberOfTopics, 
             init='pca', 
-            n_iter=self.numberOfIterations, 
+            n_iter=self.iteration, 
             method='exact')
         self.learnedEmbeddings = tsne.fit_transform(embedding)
-        self.__saveTSNE()
+        self.__saveW2VTSNE()
         print('Trained for TSNE')
         return
-
 
 
     def to2d(self, x,unit_axis=1):
@@ -232,17 +230,30 @@ class Word2Vec(LDA):
     def getPoints(self, totalToDisplay = 100, attribute = ''):
         currentIndex = 0
         processedWordInfo = []
+        
         for word in self.vocab:
+            if (self.topicFilter is not None) and (self.topicFilter != self.topics[word]):
+                continue
+
+            if currentIndex >= totalToDisplay:
+                break
+
             index = self.vocab[word]['index']
             self.vocab[word]['topic'] = self.topics[word]
             self.vocab[word]['x'] = self.learnedEmbeddings[index, 0]
             self.vocab[word]['y'] = self.learnedEmbeddings[index, 1]
 
             currentIndex += 1
-            if currentIndex <= totalToDisplay:
-                processedWordInfo.append(self.vocab[word])
+            
+            processedWordInfo.append(self.vocab[word])
 
         return processedWordInfo
+
+    def _load(self):
+        super()._load()
+        self.__loadW2VTSNE()
+        self.__loadIdToWord()
+        return
 
 
     def __loadIdToWord(self):
@@ -256,30 +267,20 @@ class Word2Vec(LDA):
         return
 
 
-    def __saveTSNE(self):
-        path = self.datasetProcessor.getDatasetPath()
-        filePath = utility.File.join(path, 'gc-tsne.npz')
-        file = utility.File(filePath)
-        file.remove()
-        np.savez(filePath, self.learnedEmbeddings)
+    def __saveW2VTSNE(self):
+        self._saveNumpy('w2v-tsne.npz', self.learnedEmbeddings)
         return
 
 
-    def __saveEmbedding(self, embedding):
-        '''
-        path = self.datasetProcessor.getDatasetPath()
-        filePath = utility.File.join(path, 'tsne.npz')
-        file = utility.File(filePath)
-        file.remove()
-        np.savez(filePath, self.learnedEmbeddings)
-        '''
+    def __loadW2VTSNE(self):
+        embeddingFromFile = self._loadNumpy('w2v-tsne.npz')
+
+        self.learnedEmbeddings = None
+        if embeddingFromFile is None:
+            return
+
+        for fileRef in embeddingFromFile:
+            self.learnedEmbeddings =  embeddingFromFile[fileRef]
         return
 
 
-    def __loadEmbedding(self):
-        path = self.datasetProcessor.getDatasetPath()
-        filePath = utility.File.join(path, 'model.ckpt')
-        saver = tf.train.Saver()
-        with tf.Session() as tfs:
-            saver.restore(tfs, filePath)
-        return

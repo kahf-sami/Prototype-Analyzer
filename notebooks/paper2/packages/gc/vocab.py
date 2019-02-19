@@ -73,15 +73,10 @@ class Vocab(Store):
 
 
     def __loadSentences(self):
-        print('--- loading sentence ---')
         sentenceData = self._loadNumpy('sentences.npz')
         self.processedSentences = []
         if sentenceData is not None:
-            
-            print(sentenceData)
             for sentence in sentenceData:
-                print('-----------')
-                print(sentence)
                 self.processedSentences.append(sentence)
         return
 
