@@ -88,6 +88,7 @@ class Base():
 
 	def loadSentences(self, text):
 		words = self.__getWords(text, True)
+		self.wordInfo = {}
 		self.sentences = []
 		currentSentence = []
 		for word in words:
@@ -114,7 +115,7 @@ class Base():
 		return self.sentences
 
 
-	def displayPlot(self):
+	def displayPlot(self, fileName):
 		#rcParams['figure.figsize']=15,10
 		points = self.getPoints()
 		if not points:
@@ -131,6 +132,8 @@ class Base():
 				ha='right', 
 				va='bottom')
 				
+		plt.savefig(fileName)
+		print('After saving')
 		plt.show()
 		return
 
@@ -148,6 +151,7 @@ class Base():
 			point['y'] = self._getY(word)
 			point['color'] = 'green'
 			point['label'] = self.filteredWords[word]['pure_word']
+			point['type'] = self.filteredWords[word]['type']
 			if self.filteredWords[word]['count'] >= topWordScores:
 				point['color'] = 'red'
 				self.contributors.append(word)
@@ -172,6 +176,7 @@ class Base():
 		localWordInfo['pure_word'] = word
 		wordKey = self.stemmer.stem(word.lower())
 		localWordInfo['stemmed_word'] = wordKey
+		localWordInfo['type'] = type
 
 		if localWordInfo['stemmed_word'] in self.wordInfo.keys():
 			self.wordInfo[wordKey]['count'] += 1
